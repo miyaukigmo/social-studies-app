@@ -226,8 +226,10 @@
 }
 
 /* スマホ以外では mobile-only を隠す */
-.mobile-only {
-  display: none !important;
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
 }
 
 /* ドロワー背景の暗い部分（オーバーレイ） */
