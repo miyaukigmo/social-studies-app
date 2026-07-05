@@ -11,6 +11,7 @@ import { TopModeTabs } from './components/TopModeTabs';
 import type { AppMode } from './components/TopModeTabs';
 import { ToolList } from './components/ToolList';
 import { ConstitutionReference } from './components/ConstitutionReference';
+import { RightInfoPanel } from './components/RightInfoPanel';
 
 const getThemeColor = (colorKey?: string) => {
   switch (colorKey) {
@@ -92,7 +93,7 @@ function App() {
             <SubjectTabs activeTab={activeTab} onTabChange={handleTabChange} />
           </div>
           
-          <main className="tab-content container two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0, position: 'relative' }}>
+          <main className="tab-content container three-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0, position: 'relative' }}>
             {/* モバイル用オーバーレイ背景 */}
             <div 
               className={`mobile-overlay ${isSidebarOpen ? 'mobile-open' : ''}`}
@@ -117,9 +118,9 @@ function App() {
               />
             </div>
 
-            {/* 右ペイン：本文 */}
-            <div className="right-pane scrollable-pane" style={{ padding: '20px', backgroundColor: '#f0f2f5' }}>
-              <div className="mobile-only" style={{ marginBottom: '16px' }}>
+            {/* 中央ペイン：本文 */}
+            <div className="center-pane scrollable-pane" style={{ backgroundColor: '#f0f2f5' }}>
+              <div className="mobile-only" style={{ marginBottom: '16px', padding: '0 16px' }}>
                 <button
                   onClick={() => setIsSidebarOpen(true)}
                   style={{
@@ -139,7 +140,14 @@ function App() {
                   <Menu size={20} /> 目次を開く
                 </button>
               </div>
-              <SectionDetail sectionId={activeSectionId} sectionTitle={activeSectionTitle} />
+              <div style={{ padding: '20px' }}>
+                <SectionDetail sectionId={activeSectionId} sectionTitle={activeSectionTitle} />
+              </div>
+            </div>
+
+            {/* 右ペイン：関連情報（モックアップ） */}
+            <div className="right-info-pane scrollable-pane desktop-only" style={{ padding: '20px', backgroundColor: '#fff', borderLeft: '1px solid var(--border-color)' }}>
+              <RightInfoPanel sectionId={activeSectionId} themeColor={themeColor} />
             </div>
           </main>
         </>
