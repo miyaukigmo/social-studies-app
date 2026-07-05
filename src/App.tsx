@@ -93,7 +93,7 @@ function App() {
             <SubjectTabs activeTab={activeTab} onTabChange={handleTabChange} />
           </div>
           
-          <main className="tab-content container three-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0, position: 'relative' }}>
+          <main className="tab-content three-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0, position: 'relative' }}>
             {/* モバイル用オーバーレイ背景 */}
             <div 
               className={`mobile-overlay ${isSidebarOpen ? 'mobile-open' : ''}`}
