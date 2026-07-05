@@ -1277,3 +1277,426 @@ export const geographyBasicGisContents: ContentItem[] = [
     ]
   }
 ];
+
+export const geographyBasicStateTerritoryContents: ContentItem[] = [
+  {
+    id: "geography-basic-state-territory-summary",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "国家と領域",
+    body: "国家は、一定の領域、そこに住む人々、政治を行う主権をもつまとまりとして捉えられる。地理総合では、国家を地図上の色分けとして見るだけでなく、領土・領海・領空、国境、資源、交通、安全保障などと結びつけて理解する。国家の領域は、国際法や周辺国との関係にも深く関わる。",
+    shortText: "国家を、領域・人々・主権から捉え、地図上の国境や海域と結びつけて理解する。",
+    order: 1,
+    regionTags: ["世界"],
+    conceptTags: ["国家", "主権", "領域", "位置", "地図", "資源", "安全保障"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "資料読解"],
+    relatedReferenceIds: ["map-world-political"],
+    relatedHints: [
+      {
+        label: "公共の国家主権・国際法",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["国家", "主権", "安全保障", "国際協調"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-state-territory-state-term",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "国家",
+    body: "国家とは、一定の領域とそこに住む人々をもち、他国から独立して政治を行う主権をもつまとまりである。地図上では国境線によって区切られるが、実際には民族、宗教、資源、交通路、歴史的経緯などが国家のあり方に関わっている。",
+    shortText: "領域・人々・主権をもつ政治的なまとまり。",
+    order: 2,
+    frontText: "国家",
+    backText: "一定の領域と人々をもち、他国から独立して政治を行う主権をもつまとまり。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["国家", "主権", "地図", "地域性"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "空間認識"],
+    relatedHints: [
+      {
+        label: "政治・経済の国際社会",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["国家", "主権", "国際協調"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-state-territory-sovereignty-term",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "主権",
+    body: "主権とは、国家が国内政治を最終的に決定し、対外的にも他国から独立して行動する権限である。領土、領海、領空は、主権が及ぶ空間として重要である。ただし、現代の国家は国際法や条約、国際機関との関係の中で行動している。",
+    shortText: "国家が国内外で独立して政治を行う権限。",
+    order: 3,
+    frontText: "主権",
+    backText: "国家が国内政治を最終的に決定し、対外的にも他国から独立して行動する権限。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["主権", "国家", "国際協調", "安全保障", "国際法"],
+    sourceTags: ["地図", "公文書"],
+    skillTags: ["用語説明", "資料読解"],
+    relatedHints: [
+      {
+        label: "公共の国家主権",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["主権", "国家", "安全保障"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-state-territory-domain-term",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "領域",
+    body: "領域とは、国家の主権が及ぶ空間であり、陸地である領土、海の部分である領海、空の部分である領空からなる。さらに、領海の外側には接続水域や排他的経済水域が設定される。地理では、領域を地図上の範囲として読むだけでなく、資源利用や交通、安全保障との関係で理解する。",
+    shortText: "国家の主権が及ぶ空間。領土・領海・領空からなる。",
+    order: 4,
+    frontText: "領域",
+    backText: "国家の主権が及ぶ空間。領土・領海・領空からなる。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["国家", "主権", "領域", "位置", "地図", "資源", "安全保障"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "用語説明"],
+    relatedReferenceIds: ["map-world-territory-zones"]
+  },
+  {
+    id: "geography-basic-state-territory-territorial-sea-term",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "領海",
+    body: "領海は、沿岸国の主権が及ぶ海域である。一般に領海の基線から外側12海里までの範囲とされる。領海では沿岸国の主権が及ぶが、外国船舶には一定の条件のもとで無害通航権が認められる。",
+    shortText: "沿岸国の主権が及ぶ、基線から外側12海里までの海域。",
+    order: 5,
+    frontText: "領海",
+    backText: "沿岸国の主権が及ぶ海域。一般に基線から外側12海里まで。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "領海", "領域", "地図", "交通", "安全保障", "国際法"],
+    sourceTags: ["地図", "公文書"],
+    skillTags: ["地図読解", "資料読解", "用語説明"],
+    relatedReferenceIds: ["map-world-maritime-zones", "source-unclos-territorial-sea"],
+    examTags: ["基本用語", "重要用語", "正誤問題注意"]
+  },
+  {
+    id: "geography-basic-state-territory-eez-term",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "排他的経済水域",
+    body: "排他的経済水域は、領海の外側に設定される海域で、沿岸国が水産資源や海底資源などの探査・開発・保存・管理に関する権利をもつ。原則として領海の基線から200海里までの範囲に設定される。主権そのものが全面的に及ぶ領海とは区別して理解する必要がある。",
+    shortText: "沿岸国が海洋資源の利用・管理などの権利をもつ海域。",
+    order: 6,
+    frontText: "排他的経済水域",
+    backText: "沿岸国が水産資源や海底資源などの探査・開発・保存・管理に関する権利をもつ海域。原則200海里まで。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "排他的経済水域", "領域", "資源", "エネルギー", "安全保障", "国際法"],
+    sourceTags: ["地図", "主題図", "公文書"],
+    skillTags: ["地図読解", "資料読解", "用語説明"],
+    relatedReferenceIds: ["map-world-eez", "source-unclos-eez"],
+    examTags: ["基本用語", "重要用語", "正誤問題注意"],
+    relatedHints: [
+      {
+        label: "資源・エネルギー問題",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["資源", "エネルギー", "環境問題"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-state-territory-maritime-zones-comparison",
+    curriculumNodeId: "geobasic-p1-c3-s1",
+    subjectId: "geography-basic",
+    type: "comparison-note",
+    title: "領海・接続水域・排他的経済水域の違い",
+    body: "領海は沿岸国の主権が及ぶ海域で、基線から12海里までとされる。接続水域は領海の外側にあり、通関、出入国管理、衛生などに関する違反の防止や処罰のために設定される。排他的経済水域は、資源の探査・開発・保存・管理などに関する沿岸国の権利が認められる海域で、原則200海里までである。",
+    shortText: "領海は主権、接続水域は取締り、排他的経済水域は資源利用の権利が中心。",
+    order: 7,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "領海", "排他的経済水域", "領域", "資源", "安全保障", "国際法"],
+    sourceTags: ["地図", "主題図", "公文書"],
+    skillTags: ["比較", "地図読解", "資料読解", "用語説明"],
+    relatedReferenceIds: ["map-world-maritime-zones", "source-unclos-maritime-zones"],
+    examTags: ["比較問題", "正誤問題注意", "重要用語"]
+  },
+
+  {
+    id: "geography-basic-japan-location-territory-summary",
+    curriculumNodeId: "geobasic-p1-c3-s2",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "日本の位置と領域",
+    body: "日本は、ユーラシア大陸の東、太平洋の西に位置する島国である。南北に長く、多くの島々からなるため、気候や自然環境に地域差があり、広い排他的経済水域をもつ。日本の位置と領域を理解することは、交通、貿易、資源、防災、安全保障を考える基礎になる。",
+    shortText: "日本を、島国・南北に長い国・海に囲まれた国として捉える。",
+    order: 1,
+    regionTags: ["日本", "アジア", "東アジア", "太平洋地域"],
+    conceptTags: ["位置", "国家", "地図", "地域性", "交通", "貿易", "資源", "防災"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "地域比較"],
+    relatedReferenceIds: ["map-japan-location-east-asia", "map-japan-territory-eez"],
+    relatedHints: [
+      {
+        label: "日本の気候と自然災害",
+        relation: "effect",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["気候", "防災", "災害"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-japan-location-island-country-term",
+    curriculumNodeId: "geobasic-p1-c3-s2",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "島国としての日本",
+    body: "日本は周囲を海に囲まれた島国である。海は、漁業や貿易、海上交通を支える一方で、台風、津波、高潮などの自然災害とも関係する。島国という条件は、日本の産業、交通、文化交流、安全保障を考えるうえで重要である。",
+    shortText: "海に囲まれた日本の位置条件を、交通・産業・防災と結びつけて理解する。",
+    order: 2,
+    frontText: "島国としての日本",
+    backText: "日本は海に囲まれた島国であり、漁業・貿易・海上交通・防災・安全保障と深く関わる。",
+    isMemorizationTarget: true,
+    regionTags: ["日本", "東アジア", "太平洋地域"],
+    conceptTags: ["位置", "交通", "貿易", "資源", "防災", "安全保障"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "因果関係", "空間認識"]
+  },
+  {
+    id: "geography-basic-japan-location-north-south-term",
+    curriculumNodeId: "geobasic-p1-c3-s2",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "南北に長い日本",
+    body: "日本列島は南北に長く、北海道から沖縄まで緯度差が大きい。そのため、気温、降水量、植生、農業、生活文化などに地域差が見られる。日本の位置を理解すると、国内の気候や産業の違いも説明しやすくなる。",
+    shortText: "日本は南北に長く、気候や生活に地域差がある。",
+    order: 3,
+    frontText: "南北に長い日本",
+    backText: "北海道から沖縄まで緯度差が大きく、気候・植生・農業・生活文化に地域差が見られる。",
+    isMemorizationTarget: true,
+    regionTags: ["日本", "北海道", "沖縄"],
+    conceptTags: ["位置", "気候", "地域差", "農業", "地域性"],
+    sourceTags: ["地図", "主題図", "雨温図"],
+    skillTags: ["地図読解", "地域比較", "因果関係"],
+    relatedHints: [
+      {
+        label: "日本の気候区分",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["気候", "地域差"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-japan-location-eez-map",
+    curriculumNodeId: "geobasic-p1-c3-s2",
+    subjectId: "geography-basic",
+    type: "map-note",
+    title: "日本の排他的経済水域",
+    body: "日本は多くの島々からなるため、国土面積に比べて広い排他的経済水域をもつ。排他的経済水域では、水産資源や海底資源、海洋環境の保全などが重要な課題になる。日本の領域を考えるときは、陸地だけでなく、周囲の海域にも注目する必要がある。",
+    shortText: "日本は島々によって広い排他的経済水域をもつ。",
+    order: 4,
+    regionTags: ["日本", "太平洋地域", "東アジア"],
+    conceptTags: ["国家", "位置", "排他的経済水域", "領域", "資源", "エネルギー", "環境問題", "安全保障"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "資料読解", "空間認識"],
+    relatedReferenceIds: ["map-japan-eez"],
+    relatedHints: [
+      {
+        label: "海洋資源とエネルギー",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["資源", "エネルギー", "環境問題"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-japan-location-relative-position-flow",
+    curriculumNodeId: "geobasic-p1-c3-s2",
+    subjectId: "geography-basic",
+    type: "flow-note",
+    title: "日本の位置から見える結びつき",
+    body: "日本は東アジアに位置し、太平洋を通じて北アメリカやオセアニアとも結びついている。海上交通や航空路、貿易、観光、人の移動を考えると、日本の位置は世界との関係を理解する手がかりになる。位置を読むときは、近い国だけでなく、交通路や海洋との関係も見ることが重要である。",
+    shortText: "日本の位置は、東アジア・太平洋・世界の交通や貿易と結びつく。",
+    order: 5,
+    regionTags: ["日本", "東アジア", "北アメリカ", "オセアニア", "太平洋地域"],
+    conceptTags: ["位置", "交通", "貿易", "観光", "グローバル化"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "因果関係"],
+    relatedHints: [
+      {
+        label: "交通・通信の発達",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["交通", "情報化", "グローバル化"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+
+  {
+    id: "geography-basic-border-territorial-issues-summary",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "国境・領土をめぐる問題",
+    body: "国境は、国家の領域を区切る境界である。山脈や河川などの自然物に沿う国境もあれば、緯線・経線などをもとに直線的に引かれた国境もある。国境や領土をめぐる問題は、資源、民族、歴史、安全保障、国際法と関係する。地理総合では、地図で位置を確認しながら、複数の資料を使って背景や影響を考えることが大切である。",
+    shortText: "国境・領土問題を、地図・歴史・資源・国際法と結びつけて考える。",
+    order: 1,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "国境", "地図", "資源", "安全保障", "国際協調", "国際法"],
+    sourceTags: ["地図", "主題図", "公文書"],
+    skillTags: ["地図読解", "資料読解", "因果関係", "比較"],
+    relatedReferenceIds: ["map-world-borders", "map-japan-territorial-issues"],
+    relatedHints: [
+      {
+        label: "公共の国際法と平和的解決",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["国家", "主権", "安全保障", "国際協調"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-border-natural-border-term",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "自然的国境",
+    body: "自然的国境とは、山脈、河川、湖、海峡などの自然物を境界として利用した国境である。地形が境界として分かりやすい一方で、河川の流路変化や資源利用、民族分布などによって問題が生じることもある。",
+    shortText: "山脈・河川・海峡など自然物を利用した国境。",
+    order: 2,
+    frontText: "自然的国境",
+    backText: "山脈・河川・湖・海峡など、自然物を境界として利用した国境。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["国家", "国境", "地形", "地図", "地域性"],
+    sourceTags: ["地図", "地形図"],
+    skillTags: ["地図読解", "空間認識", "分類"]
+  },
+  {
+    id: "geography-basic-border-artificial-border-term",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "人為的国境",
+    body: "人為的国境とは、緯線・経線や条約、植民地支配の歴史などによって人為的に定められた国境である。特にアフリカなどでは、民族や生活圏と一致しない直線的な国境が残り、政治的対立や地域問題の背景になることがある。",
+    shortText: "緯線・経線や条約などによって人為的に定められた国境。",
+    order: 3,
+    frontText: "人為的国境",
+    backText: "緯線・経線や条約、植民地支配の歴史などによって人為的に定められた国境。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "アフリカ"],
+    conceptTags: ["国家", "国境", "地図", "植民地主義", "民族自決", "地域性"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "資料読解", "因果関係"],
+    relatedHints: [
+      {
+        label: "世界史の植民地主義と脱植民地化",
+        relation: "background",
+        targetSubjectId: "world-history-advanced",
+        conceptTags: ["植民地主義", "脱植民地化", "民族自決"],
+        regionTags: ["アフリカ"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-border-territorial-issue-term",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "領土をめぐる問題",
+    body: "領土をめぐる問題は、国家間で特定の地域の帰属や管理をめぐって対立が生じる問題である。背景には、歴史的経緯、国際法上の主張、資源、漁業、安全保障、住民の生活などが関わる。学習では、地図で位置を確認し、資料の出典や立場に注意しながら理解する必要がある。",
+    shortText: "地域の帰属や管理をめぐる国家間の問題。",
+    order: 4,
+    frontText: "領土をめぐる問題",
+    backText: "国家間で、特定の地域の帰属や管理をめぐって対立が生じる問題。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "国境", "資源", "安全保障", "国際協調", "国際法"],
+    sourceTags: ["地図", "主題図", "公文書"],
+    skillTags: ["地図読解", "資料読解", "因果関係"],
+    examTags: ["重要用語", "現代社会との関連", "資料読解"]
+  },
+  {
+    id: "geography-basic-border-japan-territorial-issues-map",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "map-note",
+    title: "日本周辺の領域を地図で確認する",
+    body: "日本周辺の領域を学ぶときは、北方領土、竹島、尖閣諸島などの位置を地図で確認する。これらは、北海道、島根県、沖縄県など日本各地の位置理解とも関わる。領土をめぐる内容は、地名暗記だけでなく、国家主権、国際法、平和的解決、漁業や資源利用との関係で考えることが大切である。",
+    shortText: "日本周辺の領域を、位置・主権・国際法・資源利用と結びつけて理解する。",
+    order: 5,
+    regionTags: ["日本", "北海道", "沖縄", "東アジア"],
+    conceptTags: ["国家", "主権", "国境", "地図", "資源", "安全保障", "国際協調", "国際法"],
+    sourceTags: ["地図", "主題図", "公文書"],
+    skillTags: ["地図読解", "資料読解", "空間認識"],
+    relatedReferenceIds: ["map-japan-territorial-issues"],
+    relatedHints: [
+      {
+        label: "日本史探究の領土の画定",
+        relation: "background",
+        targetSubjectId: "japanese-history-advanced",
+        conceptTags: ["国民国家", "主権", "近代国家"],
+        regionTags: ["日本"]
+      },
+      {
+        label: "公共の国家主権と国際法",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["国家", "主権", "安全保障", "国際協調"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-border-peaceful-solution-crosslink",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "crosslink-note",
+    title: "領土問題と平和的解決",
+    body: "領土をめぐる問題は、感情的な対立だけでなく、歴史的経緯、国際法、外交交渉、安全保障、地域住民の生活に関わる。地理総合では、地図で位置を確認し、複数の資料を比較しながら、国家間の問題を平和的に解決する必要性を理解することが重要である。",
+    shortText: "領土問題は、国際法と外交による平和的解決の視点で考える。",
+    order: 6,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "国境", "国際協調", "安全保障", "地図", "国際法"],
+    sourceTags: ["地図", "公文書", "主題図"],
+    skillTags: ["資料読解", "地図読解", "比較", "因果関係"],
+    relatedHints: [
+      {
+        label: "政治・経済の国際法と国際機構",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["国家", "主権", "国際協調", "安全保障"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-border-source-reading-supplement",
+    curriculumNodeId: "geobasic-p1-c3-s3",
+    subjectId: "geography-basic",
+    type: "supplement-note",
+    title: "領土に関する資料を読むときの注意",
+    body: "領土に関する資料は、作成した国や機関の立場が反映されることがある。地図、政府資料、報道、統計を読むときは、出典、作成年、作成主体、地図の表記方法を確認する必要がある。高校範囲では、日本政府の立場を理解するとともに、国際法や平和的解決の視点と結びつけて学ぶことが大切である。",
+    shortText: "領土資料は、出典・作成主体・表記方法を確認して読む。",
+    order: 7,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["国家", "主権", "地図", "国際協調", "安全保障", "国際法"],
+    sourceTags: ["地図", "公文書", "統計"],
+    skillTags: ["資料読解", "地図読解", "比較"],
+    examTags: ["正誤問題注意", "資料読解", "現代社会との関連"]
+  }
+];

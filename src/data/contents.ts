@@ -1,7 +1,7 @@
 import type { ContentItem } from "../types/content";
 import { ethicsYouthSelfFormationContents, ethicsYouthSelfFormationContentsPart2, ethicsYouthSelfFormationContentsPart3 } from "./contentsEthics";
 import { historyBasicHistoryDoorChapter1Contents, historyBasicSourcesChapter2Part1Contents, historyBasicSourcesChapter2Part2Contents } from "./contentsHistoryBasic";
-import { geographyBasicPositionContents, geographyBasicMapProjectionContents, geographyBasicMapReadingContents, geographyBasicGisContents } from "./contentsGeographyBasic";
+import { geographyBasicPositionContents, geographyBasicMapProjectionContents, geographyBasicMapReadingContents, geographyBasicGisContents, geographyBasicStateTerritoryContents } from "./contentsGeographyBasic";
 
 const TIME_DIFFERENCE_SECTION_ID = "geobasic-p1-c1-s3";
 
@@ -2525,4 +2525,5 @@ export const contents: ContentItem[] = [
   ...geographyBasicMapProjectionContents,
   ...geographyBasicMapReadingContents,
   ...geographyBasicGisContents,
+  ...geographyBasicStateTerritoryContents,
 ];
