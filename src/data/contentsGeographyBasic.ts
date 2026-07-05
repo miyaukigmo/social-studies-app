@@ -3,7 +3,7 @@ import type { ContentItem } from "../types/content";
 export const geographyBasicPositionContents: ContentItem[] = [
   {
     id: "geography-basic-position-earth-location-summary",
-    curriculumNodeId: "geography-basic-section-1-1-1",
+    curriculumNodeId: "geobasic-p1-c1-s1",
     subjectId: "geography-basic",
     type: "section-summary",
     title: "地球上の位置",
@@ -26,7 +26,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-position-absolute-location-term",
-    curriculumNodeId: "geography-basic-section-1-1-1",
+    curriculumNodeId: "geobasic-p1-c1-s1",
     subjectId: "geography-basic",
     type: "term-card",
     title: "絶対的位置",
@@ -44,7 +44,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-position-relative-location-term",
-    curriculumNodeId: "geography-basic-section-1-1-1",
+    curriculumNodeId: "geobasic-p1-c1-s1",
     subjectId: "geography-basic",
     type: "term-card",
     title: "相対的位置",
@@ -70,7 +70,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-position-location-perspective-flow",
-    curriculumNodeId: "geography-basic-section-1-1-1",
+    curriculumNodeId: "geobasic-p1-c1-s1",
     subjectId: "geography-basic",
     type: "flow-note",
     title: "位置を読む流れ",
@@ -94,7 +94,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
 
   {
     id: "geography-basic-latitude-longitude-summary",
-    curriculumNodeId: "geography-basic-section-1-1-2",
+    curriculumNodeId: "geobasic-p1-c1-s2",
     subjectId: "geography-basic",
     type: "section-summary",
     title: "緯度・経度",
@@ -117,7 +117,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-latitude-term",
-    curriculumNodeId: "geography-basic-section-1-1-2",
+    curriculumNodeId: "geobasic-p1-c1-s2",
     subjectId: "geography-basic",
     type: "term-card",
     title: "緯度",
@@ -143,7 +143,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-longitude-term",
-    curriculumNodeId: "geography-basic-section-1-1-2",
+    curriculumNodeId: "geobasic-p1-c1-s2",
     subjectId: "geography-basic",
     type: "term-card",
     title: "経度",
@@ -169,7 +169,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-prime-meridian-term",
-    curriculumNodeId: "geography-basic-section-1-1-2",
+    curriculumNodeId: "geobasic-p1-c1-s2",
     subjectId: "geography-basic",
     type: "term-card",
     title: "本初子午線",
@@ -187,7 +187,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-latitude-longitude-comparison",
-    curriculumNodeId: "geography-basic-section-1-1-2",
+    curriculumNodeId: "geobasic-p1-c1-s2",
     subjectId: "geography-basic",
     type: "comparison-note",
     title: "緯度と経度の違い",
@@ -202,7 +202,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
 
   {
     id: "geography-basic-time-difference-summary",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "section-summary",
     title: "時差",
@@ -225,7 +225,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-time-difference-standard-time-term",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "term-card",
     title: "標準時",
@@ -243,7 +243,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-time-difference-15-degrees-term",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "term-card",
     title: "経度15度で1時間",
@@ -260,7 +260,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-time-difference-date-line-term",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "term-card",
     title: "日付変更線",
@@ -278,7 +278,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-time-difference-calculation-flow",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "flow-note",
     title: "時差計算の基本手順",
@@ -300,7 +300,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-time-difference-globalization-crosslink",
-    curriculumNodeId: "geography-basic-section-1-1-3",
+    curriculumNodeId: "geobasic-p1-c1-s3",
     subjectId: "geography-basic",
     type: "crosslink-note",
     title: "時差とグローバル化",
@@ -331,7 +331,7 @@ export const geographyBasicPositionContents: ContentItem[] = [
 export const geographyBasicMapProjectionContents: ContentItem[] = [
   {
     id: "geography-basic-map-projection-summary",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "section-summary",
     title: "球面上の世界と地図表現",
@@ -355,7 +355,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-globe-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "地球儀",
@@ -373,7 +373,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-map-projection-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "地図投影法",
@@ -391,7 +391,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-distortion-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "地図のゆがみ",
@@ -409,7 +409,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-mercator-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "メルカトル図法",
@@ -436,7 +436,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-equidistant-azimuthal-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "正距方位図法",
@@ -463,7 +463,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-equal-area-term",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "term-card",
     title: "面積を正しく表す図法",
@@ -490,7 +490,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-purpose-map",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "map-note",
     title: "目的に応じた地図の使い分け",
@@ -514,7 +514,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-comparison",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "comparison-note",
     title: "図法ごとの特徴比較",
@@ -529,7 +529,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-web-map-supplement",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "supplement-note",
     title: "ウェブ地図を見るときの注意",
@@ -552,7 +552,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-misreading-supplement",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "supplement-note",
     title: "地図をそのまま世界の姿だと思わない",
@@ -567,7 +567,7 @@ export const geographyBasicMapProjectionContents: ContentItem[] = [
   },
   {
     id: "geography-basic-map-projection-globalization-crosslink",
-    curriculumNodeId: "geography-basic-section-1-1-4",
+    curriculumNodeId: "geobasic-p1-c1-s4",
     subjectId: "geography-basic",
     type: "crosslink-note",
     title: "地図表現と世界の見え方",
