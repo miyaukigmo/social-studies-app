@@ -65,7 +65,7 @@ function App() {
         '--primary-color': themeColor 
       } as React.CSSProperties}
     >
-      <header style={{ 
+      <header className="app-header" style={{ 
         padding: '20px 20px 0 20px', 
         backgroundColor: 'var(--card-bg)', 
         borderBottom: '1px solid var(--border-color)', 

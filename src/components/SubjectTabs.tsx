@@ -25,7 +25,7 @@ export const SubjectTabs = ({ activeTab, onTabChange }: Props) => {
   const sortedSubjects = [...subjects].sort((a, b) => a.order - b.order);
 
   return (
-    <nav className="tab-nav">
+    <nav className="tab-nav scrollable-tabs">
       {sortedSubjects.map((subject) => {
         const color = getColor(subject.colorKey);
         return (

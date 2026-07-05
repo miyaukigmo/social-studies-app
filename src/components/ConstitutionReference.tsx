@@ -60,10 +60,10 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
           </h1>
         </div>
 
-        {/* 表示モード切り替えと検索バーのコンテナ */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          {/* 表示モード切り替えと検索バーのコンテナ */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap', width: '100%', justifyContent: 'flex-end' }}>
           {/* 表示モード切り替え */}
-          <div style={{ display: 'flex', backgroundColor: '#f0f2f5', borderRadius: '8px', padding: '4px' }}>
+          <div style={{ display: 'flex', backgroundColor: '#f0f2f5', borderRadius: '8px', padding: '4px', overflowX: 'auto', maxWidth: '100%' }}>
             <button
               onClick={() => setDisplayMode("text-only")}
               style={{
@@ -76,7 +76,8 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
                 fontSize: '0.9rem',
                 color: displayMode === "text-only" ? '#2b6cb0' : '#666',
                 boxShadow: displayMode === "text-only" ? '0 1px 3px rgba(0,0,0,0.1)' : 'none',
-                fontWeight: displayMode === "text-only" ? 'bold' : 'normal'
+                fontWeight: displayMode === "text-only" ? 'bold' : 'normal',
+                whiteSpace: 'nowrap'
               }}
             >
               <FileText size={16} /> 条文のみ
@@ -93,7 +94,8 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
                 fontSize: '0.9rem',
                 color: displayMode === "with-notes" ? '#2b6cb0' : '#666',
                 boxShadow: displayMode === "with-notes" ? '0 1px 3px rgba(0,0,0,0.1)' : 'none',
-                fontWeight: displayMode === "with-notes" ? 'bold' : 'normal'
+                fontWeight: displayMode === "with-notes" ? 'bold' : 'normal',
+                whiteSpace: 'nowrap'
               }}
             >
               <LayoutList size={16} /> 条文＋メモ
@@ -110,7 +112,8 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
                 fontSize: '0.9rem',
                 color: displayMode === "notes-focused" ? '#2b6cb0' : '#666',
                 boxShadow: displayMode === "notes-focused" ? '0 1px 3px rgba(0,0,0,0.1)' : 'none',
-                fontWeight: displayMode === "notes-focused" ? 'bold' : 'normal'
+                fontWeight: displayMode === "notes-focused" ? 'bold' : 'normal',
+                whiteSpace: 'nowrap'
               }}
             >
               <BookOpen size={16} /> メモ中心
@@ -118,8 +121,8 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
           </div>
 
           {/* 検索バー */}
-          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#f0f2f5', borderRadius: '24px', padding: '4px 16px', width: '300px' }}>
-            <Search size={18} color="#666" style={{ marginRight: '8px' }} />
+          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#f0f2f5', borderRadius: '24px', padding: '4px 16px', flex: '1 1 300px' }}>
+            <Search size={18} color="#666" style={{ marginRight: '8px', flexShrink: 0 }} />
             <input 
               type="text" 
               placeholder="条文・キーワードを検索" 
@@ -157,13 +160,11 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
       </div>
 
       {/* 2ペインレイアウト */}
-      <div style={{ display: 'flex', flexGrow: 1, overflow: 'hidden' }}>
+      <div className="two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden' }}>
         {/* 左ペイン：章一覧 */}
-        <div style={{ 
+        <div className="left-pane" style={{ 
           width: '280px', 
-          flexShrink: 0,
           backgroundColor: '#fafafa', 
-          borderRight: '1px solid var(--border-color)', 
           overflowY: 'auto',
           padding: '16px 0'
         }}>
@@ -175,10 +176,8 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
         </div>
 
         {/* 右ペイン：条文一覧または検索結果 */}
-        <div style={{ 
-          flexGrow: 1, 
+        <div className="right-pane scrollable-pane" style={{ 
           backgroundColor: '#f0f2f5', 
-          overflowY: 'auto',
           padding: '24px 40px'
         }}>
           {searchQuery ? (

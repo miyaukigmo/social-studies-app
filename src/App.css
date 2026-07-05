@@ -179,17 +179,44 @@
   .left-pane {
     max-width: none;
     border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     flex: none;
-    height: 40%;
+    height: 35vh; /* スマホでは目次エリアの高さを制限 */
   }
 
   .right-pane {
     flex: 1;
+    padding: 16px !important;
+  }
+
+  .app-header {
+    padding: 10px 10px 0 10px !important;
+  }
+
+  .app-header h1 {
+    font-size: 1.2rem !important;
+  }
+
+  .tab-button {
+    font-size: 0.9rem;
+    padding: 12px 8px;
+    min-width: 80px;
   }
 }
 
-/* スクロールバーのカスタマイズ */
+/* スマホ等で横スクロールを滑らかにし、スクロールバーを隠すクラス */
+.scrollable-tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.scrollable-tabs::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* スクロールバーのカスタマイズ (PC用) */
 .scrollable-pane::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -208,7 +235,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Firefox用スクロールバー設定 */
+/* Firefox用スクロールバー設定 (PC用) */
 .scrollable-pane {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
