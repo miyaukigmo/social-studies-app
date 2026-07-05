@@ -750,7 +750,7 @@ export const quizCountries: QuizCountryData[] = [
     "tags": []
   },
   {
-    "id": "736",
+    "id": "729",
     "names": [
       "スーダン",
       "スーダン共和国"
