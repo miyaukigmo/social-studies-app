@@ -113,10 +113,10 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
   const currentCountry = quizState === 'playing' ? questions[currentIndex] : null;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100%', position: 'relative' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100%', position: 'relative', overflow: 'hidden' }}>
       {/* ヘッダー */}
       <header style={{ 
-        padding: '10px 20px', 
+        padding: '10px 15px', 
         backgroundColor: '#2e8b57', 
         color: 'white',
         display: 'flex',
@@ -125,30 +125,32 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
         flexShrink: 0,
         zIndex: 10
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button 
             onClick={onBack}
             style={{
               background: 'transparent',
               border: '1px solid rgba(255,255,255,0.5)',
               color: 'white',
-              padding: '6px 12px',
+              padding: '4px 8px',
               borderRadius: '4px',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              whiteSpace: 'nowrap'
             }}
           >
             ← 戻る
           </button>
-          <h2 style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Map size={20} /> 地図クイズ
+          <h2 className="desktop-only" style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap' }}>
+            <Map size={18} /> 地図クイズ
           </h2>
         </div>
         
         {quizState === 'playing' && (
-          <div style={{ fontSize: '1.2rem', fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
-            {currentIndex + 1} / {questions.length} 問中
-            <span style={{ marginLeft: '20px', color: '#ffeb3b', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <Star size={16} fill="#ffeb3b" color="#ffeb3b" /> スコア: {score}
+          <div style={{ fontSize: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end', gap: '8px' }}>
+            <span style={{ whiteSpace: 'nowrap' }}>{currentIndex + 1}/{questions.length}問</span>
+            <span style={{ color: '#ffeb3b', display: 'flex', alignItems: 'center', gap: '2px', whiteSpace: 'nowrap' }}>
+              <Star size={14} fill="#ffeb3b" color="#ffeb3b" /> スコア: {score}
             </span>
           </div>
         )}
@@ -180,7 +182,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center', maxWidth: '800px' }}>
               {/* テーマ・レベル別 */}
               <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #2e8b57', paddingBottom: '8px', color: '#2e8b57' }}>🔥 レベル・テーマから選ぶ</h3>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #2e8b57', paddingBottom: '8px', color: '#2e8b57' }}>レベル・テーマから選ぶ</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <button onClick={() => startQuiz('tag', 'Lv1(超基礎)')} style={btnStyle('#fff3e0', '#e65100')}>Lv.1 超基礎 (約20問)</button>
                   <button onClick={() => startQuiz('tag', 'G20')} style={btnStyle('#e3f2fd', '#1565c0')}>G20の国々</button>
@@ -191,7 +193,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
 
               {/* 地域別 */}
               <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #0056b3', paddingBottom: '8px', color: '#0056b3' }}>🌍 地域から選ぶ</h3>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #0056b3', paddingBottom: '8px', color: '#0056b3' }}>地域から選ぶ</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   <button onClick={() => startQuiz('region', 'asia')} style={btnStyle('#f8f9fa', '#333', '48%')}>アジア</button>
                   <button onClick={() => startQuiz('region', 'europe')} style={btnStyle('#f8f9fa', '#333', '48%')}>ヨーロッパ</button>
@@ -203,7 +205,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
 
               {/* ランダム */}
               <div style={{ flex: '1 1 100%', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee', textAlign: 'center' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #8b0000', paddingBottom: '8px', color: '#8b0000', display: 'inline-block' }}>🎲 ランダムテスト</h3>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #8b0000', paddingBottom: '8px', color: '#8b0000', display: 'inline-block' }}>ランダムテスト</h3>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '10px' }}>
                   <button onClick={() => startQuiz('random', 30)} style={btnStyle('#0056b3', 'white')}>ランダム 30問</button>
                   <button onClick={() => startQuiz('random', 'all')} style={btnStyle('#8b0000', 'white')}>全問耐久 ({quizCountries.length}問)</button>
