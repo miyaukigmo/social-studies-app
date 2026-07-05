@@ -1,4 +1,5 @@
 import type { ContentItem } from "../types/content";
+import { ethicsYouthSelfFormationContents } from "./contentsEthics";
 
 const TIME_DIFFERENCE_SECTION_ID = "geobasic-p1-c1-s3";
 
@@ -2357,4 +2358,5 @@ export const contents: ContentItem[] = [
     shortText: "憲法は、現代社会の課題を考えるための基準として問い直され続ける。",
     isMemorizationTarget: false,
   },
+  ...ethicsYouthSelfFormationContents,
 ];
