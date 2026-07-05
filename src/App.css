@@ -1,0 +1,215 @@
+/* components用スタイル追記分をまとめるため、App.cssを新設するかindex.cssに追記するが、今回はApp.cssを活用 */
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.tab-nav {
+  display: flex;
+  overflow-x: auto;
+  background-color: #fff;
+  border-bottom: 2px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tab-button {
+  flex: 1;
+  min-width: 100px;
+  padding: 15px 10px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-button.active {
+  font-weight: bold;
+}
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* 知識カード */
+.knowledge-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-left-width: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 10px 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+}
+
+.card-meta {
+  padding: 10px 15px;
+  display: flex;
+  gap: 15px;
+  color: #666;
+  font-size: 0.9rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.summary {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.exam-point, .why-it-matters {
+  background-color: #f9f8f6;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.card-footer {
+  padding: 10px 15px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #888;
+}
+
+.tag {
+  background-color: #eee;
+  color: #555;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* マップ関連 */
+.map-container {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #eaf6ff;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.map-info-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+/* 2ペインレイアウト */
+.two-pane-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left-pane {
+  flex: 1;
+  max-width: 400px;
+  border-right: 1px solid var(--border-color);
+  background-color: #fff;
+}
+
+.right-pane {
+  flex: 2;
+  background-color: #f0f2f5;
+}
+
+.scrollable-pane {
+  overflow-y: auto;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .two-pane-layout {
+    flex-direction: column;
+  }
+  
+  .left-pane {
+    max-width: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    flex: none;
+    height: 40%;
+  }
+
+  .right-pane {
+    flex: 1;
+  }
+}
+
+/* スクロールバーのカスタマイズ */
+.scrollable-pane::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollable-pane::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-pane::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.scrollable-pane::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Firefox用スクロールバー設定 */
+.scrollable-pane {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}

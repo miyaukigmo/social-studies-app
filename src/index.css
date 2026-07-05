@@ -1,0 +1,52 @@
+:root {
+  /* ベースカラー */
+  --bg-color: #fcfbf9; /* オフホワイト / 紙のような色 */
+  --text-color: #333333; /* 濃いグレー */
+  --card-bg: #ffffff;
+  --border-color: #e2e0d9;
+  --primary-color: #0056b3; /* アクセントカラー */
+  
+  /* 科目カラー */
+  --color-geography: #2e8b57; /* 緑 */
+  --color-world-history: #8b0000; /* えんじ色 */
+  --color-japanese-history: #000080; /* 藍色 */
+  --color-ethics: #4b0082; /* 深い紫 */
+  --color-politics-economics: #002266; /* 紺 */
+  --color-cross-theme: #8b4513; /* ブラウン */
+
+  /* フォント */
+  --font-heading: 'Zen Kaku Gothic New', sans-serif;
+  --font-body: 'Zen Kaku Gothic New', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ユーティリティクラス */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
