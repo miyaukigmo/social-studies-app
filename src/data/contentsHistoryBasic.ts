@@ -394,3 +394,306 @@ export const historyBasicHistoryDoorChapter1Contents: ContentItem[] = [
     ]
   }
 ];
+
+export const historyBasicSourcesChapter2Part1Contents: ContentItem[] = [
+  {
+    id: "history-basic-sources-types-summary",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "section-summary",
+    title: "歴史資料の種類",
+    body: "この節では、歴史を考える根拠となる資料の種類を学ぶ。歴史資料には、文字で書かれた文書や記録だけでなく、遺物、建築物、絵画、写真、地図、年表、統計、新聞、映像、聞き取り記録などがある。資料の種類によって分かることと分かりにくいことが違うため、資料の性質を意識して読み取ることが重要である。",
+    shortText: "歴史を考える根拠となる資料の種類と特徴を学ぶ。",
+    order: 1,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域性", "情報化"],
+    sourceTags: ["史料", "公文書", "写真", "地図", "年表", "統計", "グラフ", "表", "風刺画", "演説"],
+    examTags: ["基本用語", "資料読解", "正誤問題注意"],
+    skillTags: ["資料読解", "分類", "比較", "要約"],
+    relatedHints: [
+      {
+        label: "地理総合の地図・統計資料の読み取り",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "統計", "地域性"]
+      },
+      {
+        label: "公共の資料読解・統計読解",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["社会", "情報化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-historical-sources-term",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "歴史資料",
+    body: "歴史資料とは、過去の人々の営みを知るための手がかりとなるものの総称である。文書や記録だけでなく、遺物、建築物、絵画、写真、地図、統計、新聞、映像、聞き取り記録なども歴史資料になる。歴史は、こうした資料を根拠として組み立てられる。",
+    shortText: "過去の人々の営みを知るための手がかりとなるもの。",
+    order: 2,
+    frontText: "歴史資料",
+    backText: "過去の人々の営みを知るための手がかりとなるもの。文書・遺物・写真・地図・統計などが含まれる。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域性"],
+    sourceTags: ["史料", "公文書", "写真", "地図", "年表", "統計"],
+    examTags: ["基本用語", "資料読解"],
+    skillTags: ["資料読解", "分類", "用語説明"],
+    relatedHints: [
+      {
+        label: "資料に基づく歴史叙述",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-written-sources-term",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "文字資料",
+    body: "文字資料とは、文字で書かれた歴史資料である。法律、条約、公文書、日記、手紙、新聞、演説、記録などが含まれる。作成者の立場や目的が表れやすいため、誰が、いつ、何のために作った資料なのかを確認する必要がある。",
+    shortText: "文字で書かれた歴史資料。",
+    order: 3,
+    frontText: "文字資料",
+    backText: "法律・条約・公文書・日記・手紙・新聞・演説・記録など、文字で書かれた歴史資料。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "国際秩序"],
+    lawTags: ["大日本帝国憲法", "日本国憲法", "ポツダム宣言", "サンフランシスコ平和条約"],
+    sourceTags: ["条文", "条約", "宣言", "演説", "公文書", "史料"],
+    examTags: ["基本用語", "資料読解", "正誤問題注意"],
+    skillTags: ["資料読解", "条文読解", "要約", "用語説明"],
+    relatedHints: [
+      {
+        label: "日本国憲法や条約資料の読み取り",
+        relation: "reference",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["憲法", "国際協調"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-visual-materials-term",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "図像資料",
+    body: "図像資料とは、絵画、写真、風刺画、ポスター、地図など、視覚的に情報を伝える資料である。文字資料には表れにくい服装、建物、表情、構図、宣伝の意図などを読み取ることができる。一方で、写真や絵も現実をそのまま写しているとは限らず、撮影者や作成者の意図に注意する必要がある。",
+    shortText: "絵画・写真・風刺画・ポスター・地図などの視覚資料。",
+    order: 4,
+    frontText: "図像資料",
+    backText: "絵画・写真・風刺画・ポスター・地図など、視覚的に情報を伝える歴史資料。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "情報化", "大衆化"],
+    sourceTags: ["写真", "風刺画", "地図", "主題図", "史料"],
+    examTags: ["基本用語", "資料読解", "正誤問題注意"],
+    skillTags: ["資料読解", "地図読解", "比較", "要約"],
+    relatedHints: [
+      {
+        label: "大衆化とメディア資料",
+        relation: "same-concept",
+        targetSubjectId: "history-basic",
+        conceptTags: ["大衆化", "情報化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-statistical-materials-term",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "統計資料",
+    body: "統計資料とは、人口、貿易額、生産量、物価、選挙結果などを数値で示した資料である。社会の変化を数量的に比較できる点が重要である。ただし、調査方法、調査範囲、単位、時期が違うと単純比較できないことがあるため、数値の条件を確認して読む必要がある。",
+    shortText: "人口・貿易・生産量などを数値で示した資料。",
+    order: 5,
+    frontText: "統計資料",
+    backText: "人口・貿易額・生産量・物価・選挙結果などを数値で示し、社会の変化を比較するための資料。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["人口", "貿易", "工業", "都市化", "グローバル化"],
+    sourceTags: ["統計", "グラフ", "表"],
+    examTags: ["基本用語", "資料読解", "共通テスト頻出"],
+    skillTags: ["統計読解", "グラフ読解", "比較", "地域比較"],
+    relatedHints: [
+      {
+        label: "地理総合の統計・グラフ読解",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["人口", "貿易", "都市"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-map-timeline-term",
+    curriculumNodeId: "history-basic-section-1-2-1",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "地図資料と年表資料",
+    body: "地図資料は、出来事がどこで起きたか、地域間がどのようにつながっていたかを考えるために使う。年表資料は、出来事がいつ起き、どの順序で進んだかを整理するために使う。歴史総合では、地図と年表を組み合わせて、時間的な推移と空間的な結び付きを同時に考えることが重要である。",
+    shortText: "出来事の場所と時期を整理するための資料。",
+    order: 6,
+    frontText: "地図資料と年表資料",
+    backText: "地図資料は出来事の場所や地域間のつながりを、年表資料は出来事の時期や順序を整理する資料。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["位置", "地域性", "交通", "貿易", "地域統合"],
+    sourceTags: ["地図", "主題図", "年表"],
+    examTags: ["資料読解", "地図読解", "比較問題"],
+    skillTags: ["地図読解", "年表読解", "時系列整理", "空間認識"],
+    relatedHints: [
+      {
+        label: "歴史総合全体の時系列整理",
+        relation: "reference",
+        targetSubjectId: "history-basic",
+        conceptTags: ["位置", "地域性"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-reading-summary",
+    curriculumNodeId: "history-basic-section-1-2-2",
+    subjectId: "history-basic",
+    type: "section-summary",
+    title: "資料の読み取り",
+    body: "この節では、資料から情報を読み取り、その意味を考える方法を学ぶ。資料を読むときは、書かれている内容や示されている数値だけでなく、作成者、作成時期、作成目的、資料が作られた背景にも注目する。歴史は資料を根拠に叙述されるため、資料をそのまま信じるのではなく、根拠としてどこまで使えるかを考える必要がある。",
+    shortText: "資料の内容・作成者・時期・目的・背景を確認して読み取る。",
+    order: 7,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "情報化"],
+    sourceTags: ["史料", "公文書", "写真", "地図", "統計", "グラフ", "表"],
+    examTags: ["資料読解", "正誤問題注意", "記述対策"],
+    skillTags: ["資料読解", "要約", "比較", "因果関係"],
+    relatedHints: [
+      {
+        label: "資料の比較と解釈",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-reading-five-points-flow",
+    curriculumNodeId: "history-basic-section-1-2-2",
+    subjectId: "history-basic",
+    type: "flow-note",
+    title: "資料を読み取る基本手順",
+    body: "資料を読むときは、①資料の種類を確認する、②作成者・作成時期・作成場所を確認する、③何を目的に作られたかを考える、④資料から直接読み取れる事実を整理する、⑤その資料から考えられる意味や限界を判断する、という順で進めるとよい。特に、直接読み取れることと、自分が推測したことを分けることが重要である。",
+    shortText: "資料の種類・作成背景・内容・意味・限界を順に確認する。",
+    order: 8,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会"],
+    sourceTags: ["史料", "公文書", "写真", "地図", "統計"],
+    examTags: ["資料読解", "記述対策", "正誤問題注意"],
+    skillTags: ["資料読解", "要約", "因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "根拠を示して説明する歴史学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-author-purpose-term",
+    curriculumNodeId: "history-basic-section-1-2-2",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "作成者と作成目的",
+    body: "資料を読むときは、誰が、いつ、何のために作った資料なのかを確認する必要がある。政府が作った公文書、個人の日記、新聞記事、宣伝ポスター、統計資料では、それぞれ目的や立場が異なる。作成者と作成目的を確認することで、資料の偏りや限界に気付きやすくなる。",
+    shortText: "資料を作った人物・組織と、その目的を確認する視点。",
+    order: 9,
+    frontText: "資料の作成者と作成目的",
+    backText: "資料を誰が、いつ、何のために作ったのかを確認する視点。資料の偏りや限界を考えるために重要。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "情報化"],
+    sourceTags: ["公文書", "史料", "写真", "風刺画", "演説"],
+    examTags: ["重要用語", "資料読解", "正誤問題注意"],
+    skillTags: ["資料読解", "比較", "要約", "論述"],
+    relatedHints: [
+      {
+        label: "メディア資料の読み取り",
+        relation: "example",
+        targetSubjectId: "public",
+        conceptTags: ["情報化", "社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-fact-interpretation-comparison",
+    curriculumNodeId: "history-basic-section-1-2-2",
+    subjectId: "history-basic",
+    type: "comparison-note",
+    title: "事実と解釈を分ける",
+    body: "資料読解では、資料から直接読み取れる事実と、その事実をもとに考えた解釈を分けることが重要である。たとえば、統計に示された数値の増減は資料から読み取れる事実だが、その増減の原因をどう説明するかは解釈である。歴史を説明するときは、どの資料を根拠に、どこまでが読み取りで、どこからが解釈なのかを明確にする必要がある。",
+    shortText: "資料から直接読める事実と、それをもとにした解釈を区別する。",
+    order: 10,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会"],
+    sourceTags: ["統計", "グラフ", "表", "史料", "公文書"],
+    examTags: ["資料読解", "記述対策", "論述対策", "正誤問題注意"],
+    skillTags: ["資料読解", "比較", "因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "資料の比較と解釈",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-reading-limits-supplement",
+    curriculumNodeId: "history-basic-section-1-2-2",
+    subjectId: "history-basic",
+    type: "supplement-note",
+    title: "資料は万能ではない",
+    body: "資料は歴史を考える根拠になるが、資料だけで過去のすべてが分かるわけではない。残っている資料には偏りがあり、資料を作った人の立場や目的も反映される。また、資料が残らなかった人々の経験は見えにくくなることがある。そのため、複数の資料を比べたり、資料の背景を確認したりすることが必要である。",
+    shortText: "資料には偏りや限界があるため、複数資料や背景確認が必要になる。",
+    order: 11,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域差", "格差"],
+    sourceTags: ["史料", "公文書", "写真", "統計"],
+    examTags: ["誤解注意", "資料読解", "記述対策"],
+    skillTags: ["資料読解", "比較", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "資料の比較と解釈で扱う複数資料の読み方",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  }
+];
