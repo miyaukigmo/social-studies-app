@@ -1700,3 +1700,441 @@ export const geographyBasicStateTerritoryContents: ContentItem[] = [
     examTags: ["正誤問題注意", "資料読解", "現代社会との関連"]
   }
 ];
+
+export const geographyBasicGlobalConnectionsContents: ContentItem[] = [
+  {
+    id: "geography-basic-transport-communication-summary",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "交通・通信の発達",
+    body: "交通・通信の発達は、世界の距離感を大きく変えてきた。航空機、船舶、鉄道、自動車、インターネットなどの発達により、人・もの・情報が国境を越えて移動しやすくなった。地理総合では、交通路や通信網を地図で確認しながら、世界の結びつきがどの地域に強く現れ、どの地域に課題を生んでいるのかを考える。",
+    shortText: "交通・通信の発達によって、人・もの・情報の移動が活発になった。",
+    order: 1,
+    regionTags: ["世界"],
+    conceptTags: ["交通", "情報化", "グローバル化", "地域差", "都市"],
+    sourceTags: ["地図", "主題図", "統計"],
+    skillTags: ["地図読解", "資料読解", "因果関係", "空間認識"],
+    relatedReferenceIds: ["map-world-transport-network"],
+    relatedHints: [
+      {
+        label: "時差と世界の結びつき",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["時差", "交通", "情報化", "グローバル化"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-transport-air-route-term",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "航空交通",
+    body: "航空交通は、人や高付加価値の商品を短時間で長距離移動させる交通手段である。大都市や国際空港を結ぶ航空路は、ビジネス、観光、国際交流、物流を支えている。一方で、航空交通は燃料消費や温室効果ガス排出とも関わるため、環境面の課題もある。",
+    shortText: "人や高付加価値の商品を短時間で長距離移動させる交通手段。",
+    order: 2,
+    frontText: "航空交通",
+    backText: "人や高付加価値の商品を短時間で長距離移動させる交通手段。観光・ビジネス・国際交流を支える。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["交通", "航空交通", "観光", "貿易", "グローバル化", "環境問題"],
+    sourceTags: ["地図", "主題図", "統計"],
+    skillTags: ["地図読解", "統計読解", "因果関係"],
+    relatedReferenceIds: ["map-world-air-routes"]
+  },
+  {
+    id: "geography-basic-transport-maritime-route-term",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "海上交通",
+    body: "海上交通は、大量の貨物を比較的安く運ぶことができる交通手段である。石油、鉄鉱石、穀物、工業製品などの国際貿易を支えており、港湾や海上交通路の位置は世界経済と深く関係する。日本のような島国では、海上交通は貿易や資源輸入の基盤となる。",
+    shortText: "大量の貨物を比較的安く運ぶ国際貿易の基盤。",
+    order: 3,
+    frontText: "海上交通",
+    backText: "大量の貨物を比較的安く運ぶ交通手段。石油・鉄鉱石・穀物・工業製品などの国際貿易を支える。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本", "太平洋地域", "インド洋地域"],
+    conceptTags: ["交通", "海上交通", "貿易", "資源", "エネルギー", "グローバル化"],
+    sourceTags: ["地図", "主題図", "統計"],
+    skillTags: ["地図読解", "資料読解", "因果関係"],
+    relatedReferenceIds: ["map-world-maritime-routes"],
+    relatedHints: [
+      {
+        label: "日本の位置と領域",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["位置", "交通", "貿易", "資源"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-transport-hub-term",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "交通の結節点",
+    body: "交通の結節点とは、複数の交通路が集まり、人やものの移動が集中する場所である。空港、港湾、鉄道駅、高速道路の交差点などが例である。交通の結節点には、物流施設、商業施設、業務機能が集まりやすく、都市の発展にも影響する。",
+    shortText: "複数の交通路が集まり、人やものの移動が集中する場所。",
+    order: 4,
+    frontText: "交通の結節点",
+    backText: "空港・港湾・鉄道駅など、複数の交通路が集まり、人やものの移動が集中する場所。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["交通", "都市", "工業", "貿易", "地域性"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "因果関係"]
+  },
+  {
+    id: "geography-basic-communication-ict-term",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "情報通信技術",
+    body: "情報通信技術は、インターネットや通信ネットワークを通じて、情報を短時間でやり取りする技術である。通信の発達により、遠隔地との会議、オンライン学習、電子商取引、国際的な金融取引などが広がった。一方で、通信環境の地域差や情報格差も課題になる。",
+    shortText: "情報を短時間でやり取りし、世界の結びつきを強める技術。",
+    order: 5,
+    frontText: "情報通信技術",
+    backText: "インターネットや通信ネットワークを通じて、情報を短時間でやり取りする技術。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["情報化", "グローバル化", "地域差", "都市", "格差", "情報格差"],
+    sourceTags: ["統計", "主題図"],
+    skillTags: ["資料読解", "統計読解", "因果関係"],
+    relatedHints: [
+      {
+        label: "GISの基本",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["GIS", "情報化", "地図"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-transport-communication-flow",
+    curriculumNodeId: "geobasic-p1-c3-s4",
+    subjectId: "geography-basic",
+    type: "flow-note",
+    title: "交通・通信の発達が世界を結ぶ流れ",
+    body: "交通が発達すると、人やものが短時間で遠くまで移動しやすくなる。通信が発達すると、情報やサービスが国境を越えてやり取りされやすくなる。その結果、貿易、観光、企業活動、文化交流が活発になる。一方で、交通網や通信環境が整った地域とそうでない地域の差も生まれる。",
+    shortText: "交通・通信の発達は世界の結びつきを強めるが、地域差も生む。",
+    order: 6,
+    regionTags: ["世界"],
+    conceptTags: ["交通", "情報化", "グローバル化", "貿易", "観光", "地域差", "格差"],
+    sourceTags: ["地図", "主題図", "統計"],
+    skillTags: ["因果関係", "地図読解", "資料読解"],
+    relatedHints: [
+      {
+        label: "グローバル化する世界",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["グローバル化", "情報化", "交通", "貿易"]
+      }
+    ]
+  },
+
+  {
+    id: "geography-basic-trade-tourism-migration-summary",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "貿易・観光・人の移動",
+    body: "交通・通信の発達により、国境を越えたもの・人・情報の移動が活発になった。貿易は資源や製品を世界各地でやり取りし、観光は地域の自然や文化を国際的な交流につなげる。人の移動には、観光、留学、労働、移民、難民などさまざまな形があり、受け入れ地域と送り出し地域の双方に影響を与える。",
+    shortText: "貿易・観光・人の移動から、世界の結びつきを理解する。",
+    order: 1,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["貿易", "観光", "人口移動", "グローバル化", "多文化共生"],
+    sourceTags: ["地図", "主題図", "統計", "グラフ"],
+    skillTags: ["地図読解", "統計読解", "資料読解", "因果関係"],
+    relatedReferenceIds: ["stats-world-trade-tourism-migration"],
+    relatedHints: [
+      {
+        label: "公共の多文化共生",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["多文化共生", "人権", "社会"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-trade-term",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "貿易",
+    body: "貿易は、国境を越えて商品やサービスを売買することである。資源が豊かな地域、工業が発達した地域、消費市場が大きい地域などが、交通網や経済関係を通じて結びつく。貿易を読むときは、何を輸出し、何を輸入しているのか、相手国や輸送経路はどこかを確認する。",
+    shortText: "国境を越えて商品やサービスを売買すること。",
+    order: 2,
+    frontText: "貿易",
+    backText: "国境を越えて商品やサービスを売買すること。資源・工業・消費市場・交通網と関係する。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["貿易", "交通", "資源", "工業", "グローバル化"],
+    sourceTags: ["統計", "地図", "主題図", "グラフ"],
+    skillTags: ["統計読解", "地図読解", "資料読解", "因果関係"],
+    relatedReferenceIds: ["stats-world-trade"]
+  },
+  {
+    id: "geography-basic-trade-import-export-term",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "輸出と輸入",
+    body: "輸出は、自国から外国へ商品やサービスを売ることであり、輸入は、外国から自国へ商品やサービスを買うことである。国や地域によって、輸出入の品目や相手国は異なる。日本の場合、工業製品の輸出や、エネルギー資源・食料の輸入などを地図や統計で確認すると、世界との結びつきが見えやすい。",
+    shortText: "輸出は外国へ売ること、輸入は外国から買うこと。",
+    order: 3,
+    frontText: "輸出と輸入",
+    backText: "輸出は自国から外国へ売ること。輸入は外国から自国へ買うこと。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["貿易", "資源", "エネルギー", "工業", "農業"],
+    sourceTags: ["統計", "表", "グラフ", "主題図"],
+    skillTags: ["統計読解", "資料読解", "比較"],
+    relatedReferenceIds: ["stats-japan-trade-import-export"]
+  },
+  {
+    id: "geography-basic-tourism-term",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "観光",
+    body: "観光は、人が日常生活の場を離れて、自然、文化、歴史、都市、レジャーなどを目的に移動する活動である。国際観光は、航空交通や情報通信の発達とともに拡大し、地域経済や雇用に影響を与える。一方で、混雑、環境負荷、地域住民の生活への影響も課題になる。",
+    shortText: "自然・文化・歴史・都市などを目的に人が移動する活動。",
+    order: 4,
+    frontText: "観光",
+    backText: "人が日常生活の場を離れて、自然・文化・歴史・都市・レジャーなどを目的に移動する活動。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["観光", "交通", "地域性", "環境問題", "持続可能性"],
+    sourceTags: ["統計", "地図", "主題図", "グラフ"],
+    skillTags: ["統計読解", "資料読解", "地図読解", "因果関係"],
+    relatedReferenceIds: ["stats-tourism-inbound-outbound"],
+    relatedHints: [
+      {
+        label: "地域づくりと観光",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["観光", "地域開発", "持続可能性"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-tourism-statistics-source",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "観光統計を読む",
+    body: "観光を学ぶときは、訪問者数、出発地、目的地、宿泊数、消費額などの統計を確認する。人数だけでなく、どの地域から来ているのか、どの季節に多いのか、地域経済や交通にどのような影響があるのかを考えることが重要である。訪日外国人旅行者の統計などは、観光と世界の結びつきを読み取る資料になる。",
+    shortText: "観光統計では、人数・出発地・目的地・季節性・消費額などを読む。",
+    order: 5,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["観光", "交通", "地域差", "グローバル化"],
+    sourceTags: ["統計", "グラフ", "表", "主題図"],
+    skillTags: ["統計読解", "資料読解", "比較", "因果関係"],
+    relatedReferenceIds: ["stats-jnto-visitor-statistics"],
+    relatedHints: [
+      {
+        label: "統計資料の読み取り",
+        relation: "reference",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["統計", "観光", "地域差"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-migration-term",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "人の移動",
+    body: "人の移動には、観光、留学、労働、移住、避難、難民などさまざまな形がある。移動の背景には、仕事、教育、家族、紛争、災害、経済格差などがある。人の移動は、送り出し地域と受け入れ地域の人口構成、労働市場、文化、社会制度に影響を与える。",
+    shortText: "観光・留学・労働・移住・避難など、人が地域を越えて移動すること。",
+    order: 6,
+    frontText: "人の移動",
+    backText: "観光・留学・労働・移住・避難など、人が地域を越えて移動すること。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["人口移動", "格差", "多文化共生", "グローバル化", "労働"],
+    sourceTags: ["統計", "地図", "主題図"],
+    skillTags: ["統計読解", "地図読解", "因果関係", "地域比較"],
+    relatedHints: [
+      {
+        label: "公共の多文化共生と人権",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["多文化共生", "人権", "社会"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-migration-push-pull-flow",
+    curriculumNodeId: "geobasic-p1-c3-s5",
+    subjectId: "geography-basic",
+    type: "flow-note",
+    title: "人の移動を考える流れ",
+    body: "人の移動を考えるときは、送り出し地域の事情と受け入れ地域の事情を分けて見る。送り出し地域では、雇用不足、紛争、災害、教育機会の不足などが移動の背景になることがある。受け入れ地域では、労働力需要、賃金、教育機会、安全な生活環境などが人を引きつける要因になる。",
+    shortText: "送り出し地域と受け入れ地域の要因を分けて、人の移動を考える。",
+    order: 7,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["人口移動", "労働", "格差", "都市", "多文化共生"],
+    sourceTags: ["統計", "地図", "主題図"],
+    skillTags: ["因果関係", "地域比較", "統計読解", "地図読解"]
+  },
+
+  {
+    id: "geography-basic-globalization-summary",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "グローバル化する世界",
+    body: "グローバル化とは、人、もの、資本、情報、文化などが国境を越えて結びつきを強めることである。交通・通信の発達、貿易の拡大、企業活動の国際化、観光や人の移動の増加によって、世界は相互に依存するようになっている。一方で、地域間格差、環境問題、文化摩擦、感染症の拡大など、地球規模の課題も生じている。",
+    shortText: "人・もの・資本・情報・文化が国境を越えて結びつきを強める。",
+    order: 1,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["グローバル化", "交通", "情報化", "貿易", "観光", "人口移動", "格差", "環境問題"],
+    sourceTags: ["地図", "主題図", "統計", "グラフ"],
+    skillTags: ["地図読解", "統計読解", "資料読解", "因果関係"],
+    relatedReferenceIds: ["map-world-globalization"],
+    relatedHints: [
+      {
+        label: "公共のグローバル化と多文化共生",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["グローバル化", "多文化共生", "人権", "格差"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-globalization-term",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "グローバル化",
+    body: "グローバル化は、人、もの、資本、情報、文化などが国境を越えて結びつきを強めることである。私たちの生活でも、外国産の商品、海外のニュース、国際的な観光、オンラインサービスなどを通して実感できる。地理では、グローバル化がどの地域にどのような影響を与えているかを考える。",
+    shortText: "国境を越えて世界の結びつきが強まること。",
+    order: 2,
+    frontText: "グローバル化",
+    backText: "人・もの・資本・情報・文化などが国境を越えて結びつきを強めること。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["グローバル化", "交通", "情報化", "貿易", "観光", "人口移動"],
+    sourceTags: ["地図", "統計", "主題図"],
+    skillTags: ["用語説明", "地図読解", "資料読解"]
+  },
+  {
+    id: "geography-basic-globalization-interdependence-term",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "相互依存",
+    body: "相互依存とは、国や地域が互いに支え合い、影響し合っている状態である。資源を輸入する国、工業製品を輸出する国、観光客を受け入れる地域、労働力を送り出す地域などは、貿易や人の移動を通して結びついている。一つの地域の変化が、遠く離れた地域にも影響することがある。",
+    shortText: "国や地域が互いに支え合い、影響し合っている状態。",
+    order: 3,
+    frontText: "相互依存",
+    backText: "国や地域が貿易・資源・人の移動・情報などを通じて互いに支え合い、影響し合う状態。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["グローバル化", "相互依存", "貿易", "資源", "人口移動", "地域差"],
+    sourceTags: ["地図", "主題図", "統計"],
+    skillTags: ["因果関係", "地図読解", "資料読解"],
+    relatedHints: [
+      {
+        label: "資源・エネルギー問題",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["資源", "エネルギー", "環境問題"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-globalization-benefits-problems-comparison",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "comparison-note",
+    title: "グローバル化の利点と課題",
+    body: "グローバル化には、商品や情報を得やすくなる、観光や文化交流が進む、企業活動や雇用の機会が広がるといった利点がある。一方で、地域間格差の拡大、環境負荷、文化摩擦、経済危機や感染症の広がりやすさなどの課題もある。グローバル化は、よい面だけでも悪い面だけでもなく、地域ごとの影響を具体的に見る必要がある。",
+    shortText: "グローバル化は利便性や交流を広げる一方、格差や環境問題も生む。",
+    order: 4,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["グローバル化", "格差", "環境問題", "多文化共生", "持続可能性"],
+    sourceTags: ["統計", "主題図", "地図"],
+    skillTags: ["比較", "因果関係", "資料読解", "地域比較"],
+    relatedHints: [
+      {
+        label: "SDGsと持続可能な社会",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["SDGs", "持続可能性", "環境問題", "格差"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-globalization-map-reading-source",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "グローバル化を地図と統計で読む",
+    body: "グローバル化を理解するには、貿易額、航空路、海上交通路、観光客数、移民、インターネット利用率などの地図や統計を組み合わせて読むことが有効である。どの地域が強く結びついているか、どの地域が取り残されやすいかを読み取ることで、世界の結びつきと地域差を具体的に考えられる。",
+    shortText: "貿易・交通・観光・移民・通信の資料から、世界の結びつきと地域差を読む。",
+    order: 5,
+    regionTags: ["世界"],
+    conceptTags: ["グローバル化", "貿易", "交通", "観光", "人口移動", "情報化", "地域差"],
+    sourceTags: ["地図", "主題図", "統計", "グラフ"],
+    skillTags: ["地図読解", "統計読解", "資料読解", "地域比較"],
+    relatedReferenceIds: ["map-world-globalization-indicators"]
+  },
+  {
+    id: "geography-basic-globalization-local-life-crosslink",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "crosslink-note",
+    title: "身近な生活とグローバル化",
+    body: "グローバル化は、遠い世界だけの話ではない。食料品、衣服、スマートフォン、動画配信、観光客、外国人労働者などを通して、身近な生活にも現れている。地理総合では、身近なものがどこから来て、どのような交通・貿易・情報通信によって届いているのかを考えることで、世界とのつながりを具体的に理解できる。",
+    shortText: "身近な商品や情報から、世界とのつながりを具体的に理解する。",
+    order: 6,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["グローバル化", "貿易", "交通", "情報化", "多文化共生"],
+    sourceTags: ["地図", "統計", "主題図"],
+    skillTags: ["資料読解", "地図読解", "因果関係", "要約"],
+    relatedHints: [
+      {
+        label: "歴史総合のグローバル化への見通し",
+        relation: "same-concept",
+        targetSubjectId: "history-basic",
+        conceptTags: ["グローバル化", "近代化", "大衆化"],
+        regionTags: ["世界"]
+      },
+      {
+        label: "公共の多文化共生",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["多文化共生", "社会", "人権"],
+        regionTags: ["日本", "世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-globalization-sustainable-supplement",
+    curriculumNodeId: "geobasic-p1-c3-s6",
+    subjectId: "geography-basic",
+    type: "supplement-note",
+    title: "グローバル化を一面的に見ない",
+    body: "グローバル化は、世界を便利に結びつける一方で、地域によって影響が異なる。貿易で利益を得る地域もあれば、産業の空洞化や雇用不安に直面する地域もある。観光で地域経済が活性化する一方で、混雑や環境負荷が問題になることもある。地理では、世界全体の流れと地域ごとの具体的な影響を分けて考えることが大切である。",
+    shortText: "グローバル化は地域によって異なる影響をもたらすため、一面的に判断しない。",
+    order: 7,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["グローバル化", "地域差", "格差", "環境問題", "持続可能性"],
+    sourceTags: ["統計", "地図", "主題図"],
+    skillTags: ["比較", "因果関係", "資料読解", "地域比較"],
+    examTags: ["正誤問題注意", "現代社会との関連", "資料読解"]
+  }
+];
