@@ -5,7 +5,7 @@ import { ConstitutionArticleList } from "./ConstitutionArticleList";
 import { searchConstitution } from "../utils/constitutionSearch";
 import { ConstitutionArticleCard } from "./ConstitutionArticleCard";
 import type { ConstitutionDisplayMode } from "../types/constitution";
-import { Search, X, BookOpen, FileText, LayoutList } from "lucide-react";
+import { Search, X, BookOpen, FileText, LayoutList, Menu } from "lucide-react";
 
 interface Props {
   onBack: () => void;
@@ -15,6 +15,7 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
   const [selectedChapterId, setSelectedChapterId] = useState<string>("preamble");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [displayMode, setDisplayMode] = useState<ConstitutionDisplayMode>("with-notes");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const searchResults = useMemo(() => {
     return searchConstitution(constitutionReferenceData, searchQuery);
@@ -23,6 +24,7 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
   const handleChapterSelect = (id: string) => {
     setSelectedChapterId(id);
     setSearchQuery(""); // 章を切り替えたら検索をクリア
+    setIsSidebarOpen(false); // ドロワーを閉じる
   };
 
   const handleClearSearch = () => {
@@ -160,14 +162,29 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
       </div>
 
       {/* 2ペインレイアウト */}
-      <div className="two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden' }}>
+      <div className="two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', position: 'relative' }}>
+        {/* モバイル用オーバーレイ背景 */}
+        <div 
+          className={`mobile-overlay ${isSidebarOpen ? 'mobile-open' : ''}`}
+          onClick={() => setIsSidebarOpen(false)}
+        />
+        
         {/* 左ペイン：章一覧 */}
-        <div className="left-pane" style={{ 
+        <div className={`left-pane scrollable-pane ${isSidebarOpen ? 'mobile-open' : ''}`} style={{ 
           width: '280px', 
           backgroundColor: '#fafafa', 
           overflowY: 'auto',
           padding: '16px 0'
         }}>
+          <div className="mobile-only" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid #eee', padding: '0 16px 10px 16px' }}>
+            <h3 style={{ margin: 0 }}>章一覧</h3>
+            <button 
+              onClick={() => setIsSidebarOpen(false)}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px' }}
+            >
+              <X size={24} />
+            </button>
+          </div>
           <ConstitutionChapterList 
             chapters={constitutionReferenceData.chapters} 
             selectedChapterId={searchQuery ? "" : selectedChapterId}
@@ -180,6 +197,26 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
           backgroundColor: '#f0f2f5', 
           padding: '24px 40px'
         }}>
+          <div className="mobile-only" style={{ marginBottom: '16px' }}>
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px',
+                padding: '10px 16px',
+                backgroundColor: '#fff',
+                border: '1px solid var(--border-color)',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '0.95rem',
+                fontWeight: 'bold',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                width: '100%',
+                justifyContent: 'center'
+              }}
+            >
+              <Menu size={20} /> 章一覧を開く
+            </button>
+          </div>
           {searchQuery ? (
             <div>
               <div style={{ 

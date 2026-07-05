@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Menu, X } from 'lucide-react';
 import './App.css';
 import type { SubjectId } from './types/curriculum';
 import { subjects } from './data/subjects';
@@ -34,6 +34,8 @@ function App() {
   const [activeTab, setActiveTab] = useState<SubjectId>('geography-basic');
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   const [activeSectionTitle, setActiveSectionTitle] = useState<string>('');
+  
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const activeSubject = subjects.find(s => s.id === activeTab);
   const themeColor = getThemeColor(activeSubject?.colorKey);
@@ -48,6 +50,7 @@ function App() {
   const handleSectionSelect = (id: string, title: string) => {
     setActiveSectionId(id);
     setActiveSectionTitle(title);
+    setIsSidebarOpen(false); // 選択したらドロワーを閉じる
   };
 
   // 全画面表示が必要なツール（地図クイズなど）の表示
@@ -89,15 +92,53 @@ function App() {
             <SubjectTabs activeTab={activeTab} onTabChange={handleTabChange} />
           </div>
           
-          <main className="tab-content container two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0 }}>
-            <div className="left-pane scrollable-pane" style={{ padding: '20px' }}>
+          <main className="tab-content container two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', padding: 0, position: 'relative' }}>
+            {/* モバイル用オーバーレイ背景 */}
+            <div 
+              className={`mobile-overlay ${isSidebarOpen ? 'mobile-open' : ''}`}
+              onClick={() => setIsSidebarOpen(false)}
+            />
+            
+            {/* 左ペイン：目次（スマホ時はドロワー） */}
+            <div className={`left-pane scrollable-pane ${isSidebarOpen ? 'mobile-open' : ''}`} style={{ padding: '20px' }}>
+              <div className="mobile-only" style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
+                <h3 style={{ margin: 0 }}>カリキュラム目次</h3>
+                <button 
+                  onClick={() => setIsSidebarOpen(false)}
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px' }}
+                >
+                  <X size={24} />
+                </button>
+              </div>
               <CurriculumTree 
                 subjectId={activeTab} 
                 activeSectionId={activeSectionId || undefined}
                 onSectionSelect={handleSectionSelect}
               />
             </div>
+
+            {/* 右ペイン：本文 */}
             <div className="right-pane scrollable-pane" style={{ padding: '20px', backgroundColor: '#f0f2f5' }}>
+              <div className="mobile-only" style={{ marginBottom: '16px' }}>
+                <button
+                  onClick={() => setIsSidebarOpen(true)}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '8px',
+                    padding: '10px 16px',
+                    backgroundColor: '#fff',
+                    border: '1px solid var(--border-color)',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontSize: '0.95rem',
+                    fontWeight: 'bold',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                    width: '100%',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <Menu size={20} /> 目次を開く
+                </button>
+              </div>
               <SectionDetail sectionId={activeSectionId} sectionTitle={activeSectionTitle} />
             </div>
           </main>

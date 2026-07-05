@@ -176,12 +176,25 @@
     flex-direction: column;
   }
   
+  /* スマホ時はドロワーメニュー（画面左からスライド）にする */
   .left-pane {
-    max-width: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* 初期状態は画面外 */
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
     border-right: none;
-    border-bottom: 2px solid var(--border-color);
-    flex: none;
-    height: 35vh; /* スマホでは目次エリアの高さを制限 */
+    border-bottom: none;
+  }
+
+  /* ドロワーが開いた状態 */
+  .left-pane.mobile-open {
+    left: 0;
   }
 
   .right-pane {
@@ -201,6 +214,36 @@
     font-size: 0.9rem;
     padding: 12px 8px;
     min-width: 80px;
+  }
+
+  .mobile-only {
+    display: flex !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* スマホ以外では mobile-only を隠す */
+.mobile-only {
+  display: none !important;
+}
+
+/* ドロワー背景の暗い部分（オーバーレイ） */
+.mobile-overlay {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-overlay.mobile-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
   }
 }
 
