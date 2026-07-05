@@ -964,3 +964,316 @@ export const geographyBasicMapReadingContents: ContentItem[] = [
     ]
   }
 ];
+
+export const geographyBasicGisContents: ContentItem[] = [
+  {
+    id: "geography-basic-gis-basic-summary",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "GISの基本",
+    body: "GISは、位置に関する情報を地図上で管理・分析・表現するしくみである。地形、人口、交通、土地利用、災害リスクなど、複数の地理情報を重ね合わせることで、地域の特徴や課題を読み取りやすくなる。地理総合では、GISを単なるデジタル地図としてではなく、地域を分析するための道具として理解することが重要である。",
+    shortText: "GISを使って、位置情報を地図上で管理・分析・表現する。",
+    order: 1,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "地域性", "情報化"],
+    sourceTags: ["GIS資料", "地図", "統計"],
+    skillTags: ["地図読解", "資料読解", "統計読解", "空間認識"],
+    relatedReferenceIds: ["gis-basic-overview"],
+    relatedHints: [
+      {
+        label: "主題図の読み取り",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-gis-term",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "GIS",
+    body: "GISは、Geographic Information Systemの略で、日本語では地理情報システムという。地図上の位置情報に、人口、土地利用、交通、災害リスクなどの属性情報を結びつけ、表示・分析・比較するために使われる。",
+    shortText: "位置情報と属性情報を結びつけて扱う地理情報システム。",
+    order: 2,
+    frontText: "GIS",
+    backText: "地理情報システム。位置情報と人口・土地利用・交通・災害リスクなどの属性情報を結びつけ、地図上で表示・分析するしくみ。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "情報化", "分布"],
+    sourceTags: ["GIS資料", "地図"],
+    skillTags: ["地図読解", "資料読解", "空間認識"],
+    examTags: ["基本用語", "重要用語", "地図読解"]
+  },
+  {
+    id: "geography-basic-gis-geographic-information-term",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "地理情報",
+    body: "地理情報とは、場所に結びついた情報のことである。住所、緯度・経度、標高、土地利用、人口、施設の位置、道路網、災害危険区域などが含まれる。GISでは、これらの情報を地図上に表示し、地域の特徴や課題を分析する。",
+    shortText: "場所に結びついた情報。",
+    order: 3,
+    frontText: "地理情報",
+    backText: "住所・緯度経度・標高・土地利用・人口・施設位置など、場所に結びついた情報。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "位置", "地域性", "情報化"],
+    sourceTags: ["GIS資料", "地図", "統計"],
+    skillTags: ["地図読解", "資料読解", "分類"]
+  },
+  {
+    id: "geography-basic-gis-layer-term",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "レイヤー",
+    body: "レイヤーとは、GISで地図情報を層のように分けて扱う考え方である。例えば、地形、道路、鉄道、人口、学校、避難所、浸水想定区域などを別々のレイヤーとして重ねることで、地域の特徴や課題を多面的に分析できる。",
+    shortText: "GISで地図情報を層のように分けて扱う考え方。",
+    order: 4,
+    frontText: "レイヤー",
+    backText: "GISで、地形・道路・人口・災害リスクなどの地図情報を層のように分けて扱う考え方。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "防災", "レイヤー"],
+    sourceTags: ["GIS資料", "地図", "主題図"],
+    skillTags: ["地図読解", "資料読解", "分類", "空間認識"]
+  },
+  {
+    id: "geography-basic-gis-overlay-term",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "重ね合わせ",
+    body: "GISの重ね合わせとは、複数の地理情報を同じ地図上に表示して、関係を読み取ることである。例えば、人口分布と鉄道網、学校の位置と通学圏、浸水想定区域と避難所の位置を重ねると、地域の利便性や防災上の課題を考えやすくなる。",
+    shortText: "複数の地理情報を同じ地図上に重ねて関係を読み取ること。",
+    order: 5,
+    frontText: "GISの重ね合わせ",
+    backText: "人口・交通・災害リスクなど複数の地理情報を同じ地図上に重ね、地域の特徴や課題を分析すること。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "地域性", "防災", "重ね合わせ"],
+    sourceTags: ["GIS資料", "地図", "主題図", "ハザードマップ"],
+    skillTags: ["地図読解", "資料読解", "因果関係", "空間認識"]
+  },
+  {
+    id: "geography-basic-gis-analysis-flow",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "flow-note",
+    title: "GISで地域を分析する流れ",
+    body: "GISで地域を分析するときは、まず何を調べるのかという問いを立てる。次に、必要な地理情報を集め、地図上に表示する。さらに、複数の情報を重ね合わせ、分布の偏りや地域差を読み取る。最後に、読み取った内容を地形、人口、交通、産業、防災などの要因と結びつけて説明する。",
+    shortText: "問いを立て、情報を集め、重ね合わせ、分布と要因を説明する。",
+    order: 6,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "地域差", "地域性"],
+    sourceTags: ["GIS資料", "地図", "統計", "主題図"],
+    skillTags: ["地図読解", "資料読解", "統計読解", "因果関係", "要約"],
+    relatedHints: [
+      {
+        label: "地域調査と地域づくり",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地域性", "地域開発", "防災"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-gis-disaster-example-map",
+    curriculumNodeId: "geobasic-p1-c2-s4",
+    subjectId: "geography-basic",
+    type: "map-note",
+    title: "GISと防災",
+    body: "GISは防災でも活用される。地形、標高、河川、過去の災害、浸水想定区域、避難所、道路網などを重ね合わせることで、どの地域にどのような危険があるのか、避難経路に問題がないかを考えられる。防災では、地図情報を一つだけ見るのではなく、複数の情報を組み合わせて判断することが大切である。",
+    shortText: "GISでは、地形・災害リスク・避難所などを重ねて防災を考えられる。",
+    order: 7,
+    regionTags: ["日本"],
+    conceptTags: ["GIS", "防災", "災害", "地形", "地域性"],
+    sourceTags: ["GIS資料", "ハザードマップ", "地図", "統計"],
+    skillTags: ["地図読解", "資料読解", "因果関係", "空間認識"],
+    relatedReferenceIds: ["gis-disaster-hazard-map"],
+    relatedHints: [
+      {
+        label: "自然災害と防災",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["防災", "災害", "地形"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+
+  {
+    id: "geography-basic-geographic-information-summary",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "地理情報の収集・整理・表現",
+    body: "地理情報を活用するには、情報を集めるだけでなく、目的に合わせて整理し、分かりやすく表現する必要がある。統計、地図、写真、現地調査、ウェブ地図、行政資料などを使い、信頼できる情報かどうかを確認することも大切である。地理情報の表現では、地図、表、グラフ、写真、文章を組み合わせると、地域の特徴を伝えやすくなる。",
+    shortText: "地理情報を収集・整理し、地図やグラフで分かりやすく表現する。",
+    order: 1,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "地域性", "情報化"],
+    sourceTags: ["GIS資料", "地図", "統計", "グラフ", "表", "写真"],
+    skillTags: ["資料読解", "地図読解", "統計読解", "要約", "分類"],
+    relatedReferenceIds: ["gis-geographic-information-workflow"]
+  },
+  {
+    id: "geography-basic-geographic-information-collection-source",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "地理情報を集める",
+    body: "地理情報は、地図、統計、写真、現地観察、聞き取り調査、行政資料、ウェブ地図などから集めることができる。例えば、人口の変化を調べるなら統計、土地利用を調べるなら地形図や空中写真、災害リスクを調べるならハザードマップが役立つ。目的に合った資料を選ぶことが大切である。",
+    shortText: "目的に応じて、地図・統計・写真・行政資料などから情報を集める。",
+    order: 2,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "人口", "地形", "災害", "地域性"],
+    sourceTags: ["地図", "統計", "写真", "ハザードマップ", "GIS資料"],
+    skillTags: ["資料読解", "地図読解", "統計読解", "分類"],
+    relatedHints: [
+      {
+        label: "地域調査",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地域性", "地図", "GIS"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-geographic-information-source-check-term",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "出典の確認",
+    body: "地理情報を使うときは、出典を確認する必要がある。誰が、いつ、どのような方法で作成した資料なのかによって、情報の信頼性や使い方は変わる。統計や地図では、作成年、調査範囲、単位、分類方法を確認することが重要である。",
+    shortText: "資料の作成者・時期・方法・単位などを確認すること。",
+    order: 3,
+    frontText: "出典の確認",
+    backText: "資料を使うとき、作成者・作成年・調査方法・単位・分類方法などを確認すること。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["地図", "情報化", "分布"],
+    sourceTags: ["統計", "地図", "表", "グラフ", "GIS資料"],
+    skillTags: ["資料読解", "統計読解", "地図読解"],
+    examTags: ["資料読解", "正誤問題注意"]
+  },
+  {
+    id: "geography-basic-geographic-information-statistics-organization-source",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "統計を整理する",
+    body: "統計を使うときは、数値をそのまま並べるだけでなく、比較しやすい形に整理する。地域別、年代別、割合、人口あたり、面積あたりなど、目的に合った整理の仕方を選ぶ必要がある。総数と割合では見える内容が異なるため、何を比較しているのかを明確にすることが大切である。",
+    shortText: "統計は、地域別・年代別・割合など目的に応じて整理する。",
+    order: 4,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["人口", "地域差", "分布", "都市"],
+    sourceTags: ["統計", "表", "グラフ"],
+    skillTags: ["統計読解", "資料読解", "比較", "分類"],
+    examTags: ["資料読解", "比較問題", "正誤問題注意"]
+  },
+  {
+    id: "geography-basic-geographic-information-map-expression-source",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "地図で表現する",
+    body: "地理情報は、地図で表すことで場所ごとの違いや分布の偏りを理解しやすくなる。人口密度は階級区分図、施設の分布はドットマップ、地域ごとの数量比較は図形表現図など、情報の性質に合わせて表現方法を選ぶ。地図で表現するときは、凡例、単位、階級区分を分かりやすく示す必要がある。",
+    shortText: "情報の性質に合わせて、階級区分図・ドットマップ・図形表現図などで表す。",
+    order: 5,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["地図", "分布", "地域差", "人口", "都市"],
+    sourceTags: ["主題図", "統計", "地図", "グラフ"],
+    skillTags: ["地図読解", "統計読解", "資料読解", "比較"],
+    relatedHints: [
+      {
+        label: "主題図の読み取り",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布", "地域差"],
+        regionTags: ["世界", "日本"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-geographic-information-graph-expression-source",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "source-note",
+    title: "グラフで表現する",
+    body: "地理情報は、グラフで表すことで変化や比較を読み取りやすくなる。時期ごとの変化は折れ線グラフ、数量の比較は棒グラフ、割合の内訳は円グラフや帯グラフが向いている。グラフを使うときは、単位、目盛り、期間、対象地域を確認する必要がある。",
+    shortText: "変化・比較・割合に応じて、折れ線・棒・円・帯グラフを使い分ける。",
+    order: 6,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["人口", "都市", "地域差", "分布"],
+    sourceTags: ["グラフ", "統計", "表"],
+    skillTags: ["統計読解", "グラフ読解", "資料読解", "比較"],
+    examTags: ["資料読解", "比較問題"]
+  },
+  {
+    id: "geography-basic-geographic-information-expression-flow",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "flow-note",
+    title: "地理情報を表現する流れ",
+    body: "地理情報を表現するときは、まず問いや目的を決める。次に、必要な資料を集め、出典や単位を確認する。そのうえで、表やグラフに整理し、必要に応じて地図化する。最後に、分布の特徴、地域差、考えられる要因、課題を文章で説明する。",
+    shortText: "問いを立て、資料を集め、整理し、地図やグラフで表現して説明する。",
+    order: 7,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "分布", "地域差", "地域性"],
+    sourceTags: ["GIS資料", "地図", "統計", "グラフ", "表"],
+    skillTags: ["資料読解", "地図読解", "統計読解", "要約", "因果関係"]
+  },
+  {
+    id: "geography-basic-geographic-information-misuse-supplement",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "supplement-note",
+    title: "地理情報の扱いで注意すること",
+    body: "地理情報は便利だが、使い方を誤ると地域の特徴を一面的に捉えてしまう。古い統計、範囲の違うデータ、単位の違う資料をそのまま比べると、誤った結論につながることがある。また、個人情報や防災情報など、扱いに配慮が必要な情報もある。資料は必ず出典、時期、単位、対象範囲を確認して使う。",
+    shortText: "出典・時期・単位・対象範囲を確認しないと、地理情報は誤読につながる。",
+    order: 8,
+    regionTags: ["世界", "日本"],
+    conceptTags: ["GIS", "地図", "情報化", "地域差"],
+    sourceTags: ["GIS資料", "統計", "地図", "表", "グラフ"],
+    skillTags: ["資料読解", "統計読解", "地図読解", "比較"],
+    examTags: ["正誤問題注意", "資料読解"]
+  },
+  {
+    id: "geography-basic-geographic-information-gsi-crosslink",
+    curriculumNodeId: "geobasic-p1-c2-s5",
+    subjectId: "geography-basic",
+    type: "crosslink-note",
+    title: "地理院地図と地理情報",
+    body: "日本の地理情報を調べるときは、国土地理院の地理院地図が重要な資料になる。地形図、写真、標高、地形分類、災害情報などを地図上で確認でき、地域の地形や防災上の特徴を調べる入口になる。学校の学習では、地図を眺めるだけでなく、複数の情報を重ねて地域の特徴を説明することが大切である。",
+    shortText: "地理院地図は、地形・写真・標高・災害情報などを確認できる地理情報資料である。",
+    order: 9,
+    regionTags: ["日本"],
+    conceptTags: ["GIS", "地図", "地形", "防災", "災害", "地理院地図"],
+    sourceTags: ["GIS資料", "地図", "地形図", "写真", "ハザードマップ"],
+    skillTags: ["地図読解", "資料読解", "空間認識", "因果関係"],
+    relatedReferenceIds: ["gis-gsi-maps"],
+    relatedHints: [
+      {
+        label: "地形図の読み取り",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "地形", "防災"],
+        regionTags: ["日本"]
+      },
+      {
+        label: "自然災害と防災",
+        relation: "reference",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["防災", "災害", "地形"],
+        regionTags: ["日本"]
+      }
+    ]
+  }
+];
