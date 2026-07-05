@@ -26,13 +26,14 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
     fontSize: '1rem',
     backgroundColor: bg,
     color: color,
-    border: `1px solid ${color === 'white' ? 'transparent' : color}`,
-    borderRadius: '6px',
+    border: `1px solid ${color === 'white' ? 'rgba(0,0,0,0.05)' : color}`,
+    borderRadius: '10px',
     cursor: 'pointer',
     fontWeight: 'bold',
     width: width,
     boxSizing: 'border-box' as const,
-    transition: 'opacity 0.2s',
+    boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+    transition: 'transform 0.2s, box-shadow 0.2s',
   });
   const [quizState, setQuizState] = useState<QuizState>('idle');
   const [questions, setQuestions] = useState<QuizCountryData[]>([]);
@@ -181,7 +182,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
           <div style={{
             position: 'absolute',
             top: 0, left: 0, right: 0, bottom: 0,
-            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            backgroundColor: 'rgba(240, 248, 255, 0.95)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -194,10 +195,10 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
               赤くハイライトされた国の名前をタイピングしよう！
             </p>
             
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center', maxWidth: '800px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center', maxWidth: '800px', width: '100%' }}>
               {/* テーマ・レベル別 */}
-              <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #2e8b57', paddingBottom: '8px', color: '#2e8b57', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '24px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)', border: 'none' }}>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #2e8b57', paddingBottom: '12px', color: '#2e8b57', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Flame size={20} /> レベル・テーマから選ぶ
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -209,8 +210,8 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
               </div>
 
               {/* 地域別 */}
-              <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #0056b3', paddingBottom: '8px', color: '#0056b3', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ flex: '1 1 300px', backgroundColor: 'white', padding: '24px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)', border: 'none' }}>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #0056b3', paddingBottom: '12px', color: '#0056b3', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Globe2 size={20} /> 地域から選ぶ
                 </h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
@@ -218,13 +219,13 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
                   <button onClick={() => startQuiz('region', 'europe')} style={btnStyle('#f8f9fa', '#333', '48%')}>ヨーロッパ</button>
                   <button onClick={() => startQuiz('region', 'africa')} style={btnStyle('#f8f9fa', '#333', '48%')}>アフリカ</button>
                   <button onClick={() => startQuiz('region', 'americas')} style={btnStyle('#f8f9fa', '#333', '48%')}>南北アメリカ</button>
-                  <button onClick={() => startQuiz('region', 'oceania')} style={btnStyle('#f8f9fa', '#333', '100%')}>オセアニア</button>
+                  <button onClick={() => startQuiz('region', 'oceania')} style={btnStyle('#f8f9fa', '#333', '48%')}>オセアニア</button>
                 </div>
               </div>
 
               {/* ランダム */}
-              <div style={{ flex: '1 1 100%', backgroundColor: 'white', padding: '20px', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #eee', textAlign: 'center' }}>
-                <h3 style={{ marginTop: 0, borderBottom: '2px solid #8b0000', paddingBottom: '8px', color: '#8b0000', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ flex: '1 1 100%', backgroundColor: 'white', padding: '24px', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)', border: 'none', textAlign: 'center' }}>
+                <h3 style={{ marginTop: 0, borderBottom: '2px solid #8b0000', paddingBottom: '12px', color: '#8b0000', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                   <Dices size={20} /> ランダムテスト
                 </h3>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '10px' }}>
@@ -331,14 +332,17 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
                 onClick={checkAnswer}
                 disabled={inputValue.trim() === '' || feedback !== null}
                 style={{
-                  padding: '0 24px',
-                  fontSize: '1.1rem',
+                  minWidth: '70px',
+                  padding: '0 12px',
+                  fontSize: '1rem',
                   fontWeight: 'bold',
                   backgroundColor: inputValue.trim() === '' ? '#ccc' : '#2e8b57',
                   color: 'white',
                   border: 'none',
                   borderRadius: '8px',
-                  cursor: inputValue.trim() === '' ? 'default' : 'pointer'
+                  cursor: inputValue.trim() === '' ? 'default' : 'pointer',
+                  flexShrink: 0,
+                  whiteSpace: 'nowrap'
                 }}
               >
                 答える

@@ -143,6 +143,18 @@ export const quizCountries: QuizCountryData[] = [
     ]
   },
   {
+    "id": "626",
+    "names": [
+      "東ティモール",
+      "東ティモール民主共和国",
+      "ひがしてぃもーる"
+    ],
+    "region": "asia",
+    "tags": [
+      "ASEAN"
+    ]
+  },
+  {
     "id": "702",
     "names": [
       "シンガポール",
