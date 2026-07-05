@@ -11,9 +11,15 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 interface QuizMapRendererProps {
   targetCountryId: string | null;
+  correctCountryIds?: string[];
+  incorrectCountryIds?: string[];
 }
 
-export const QuizMapRenderer: React.FC<QuizMapRendererProps> = ({ targetCountryId }) => {
+export const QuizMapRenderer: React.FC<QuizMapRendererProps> = ({ 
+  targetCountryId, 
+  correctCountryIds = [], 
+  incorrectCountryIds = [] 
+}) => {
   const [position, setPosition] = useState({ coordinates: [0, 0] as [number, number], zoom: 1 });
   const [geographiesData, setGeographiesData] = useState<any[]>([]);
 
@@ -64,7 +70,8 @@ export const QuizMapRenderer: React.FC<QuizMapRendererProps> = ({ targetCountryI
   return (
     <div style={{ width: '100%', height: '100%', backgroundColor: '#e0f7fa', overflow: 'hidden' }}>
       <ComposableMap
-        projectionConfig={{ scale: 140 }}
+        projection="geoMercator"
+        projectionConfig={{ scale: 120 }}
         style={{ width: "100%", height: "100%" }}
       >
         <ZoomableGroup 
@@ -85,17 +92,28 @@ export const QuizMapRenderer: React.FC<QuizMapRendererProps> = ({ targetCountryI
 
               return geographies.map((geo) => {
                 const isTarget = geo.id === targetCountryId;
+                const isCorrect = correctCountryIds.includes(geo.id);
+                const isIncorrect = incorrectCountryIds.includes(geo.id);
+                
+                let fillColor = "#ECEFF1"; // 未回答
+                if (isTarget) {
+                  fillColor = "#ff9800"; // 現在出題中（オレンジ）
+                } else if (isCorrect) {
+                  fillColor = "#f44336"; // 正解（赤）
+                } else if (isIncorrect) {
+                  fillColor = "#2196f3"; // 不正解（青）
+                }
                 
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill={isTarget ? "#ff5252" : "#ECEFF1"}
+                    fill={fillColor}
                     stroke="#BDBDBD"
                     strokeWidth={0.5 / position.zoom} // ズームレベルに応じて線を細くする
                     style={{
                       default: { outline: "none" },
-                      hover: { outline: "none", fill: isTarget ? "#ff5252" : "#D6D6DA" },
+                      hover: { outline: "none", fill: isTarget ? "#ff9800" : (isCorrect ? "#f44336" : isIncorrect ? "#2196f3" : "#D6D6DA") },
                       pressed: { outline: "none" },
                     }}
                   />

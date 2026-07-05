@@ -42,6 +42,8 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
   const [inputValue, setInputValue] = useState('');
   const [feedback, setFeedback] = useState<'correct' | 'incorrect' | null>(null);
   const [correctAnswer, setCorrectAnswer] = useState<string>(''); // 不正解時に正解を表示するため
+  const [correctIds, setCorrectIds] = useState<string[]>([]); // 正解した国のID
+  const [incorrectIds, setIncorrectIds] = useState<string[]>([]); // 不正解だった国のID
   
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -72,6 +74,8 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
     setScore(0);
     setInputValue('');
     setFeedback(null);
+    setCorrectIds([]);
+    setIncorrectIds([]);
     setQuizState('playing');
   };
 
@@ -93,9 +97,11 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
     if (isCorrect) {
       setFeedback('correct');
       setScore(prev => prev + 1);
+      setCorrectIds(prev => [...prev, currentQuestion.id]);
     } else {
       setFeedback('incorrect');
       setCorrectAnswer(currentQuestion.names[0]); // メインの表示名をセット
+      setIncorrectIds(prev => [...prev, currentQuestion.id]);
     }
 
     // 1.5秒後に次の問題へ
@@ -164,7 +170,11 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
       {/* メインエリア */}
       <div style={{ flexGrow: 1, position: 'relative', marginTop: '60px', height: 'calc(100vh - 60px)' }}>
         {/* 背景の地図描画（常に存在させておくことでチラつきを防ぐ） */}
-        <QuizMapRenderer targetCountryId={currentCountry?.id || null} />
+        <QuizMapRenderer 
+          targetCountryId={currentCountry?.id || null} 
+          correctCountryIds={correctIds}
+          incorrectCountryIds={incorrectIds}
+        />
 
         {/* コース選択画面 */}
         {quizState === 'idle' && (
