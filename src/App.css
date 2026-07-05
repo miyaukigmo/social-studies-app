@@ -155,8 +155,8 @@
 }
 
 .left-pane {
-  flex: 0 0 280px; /* 固定幅 */
-  max-width: 280px;
+  flex: 0 0 340px; /* 固定幅を広げる */
+  max-width: 340px;
   border-right: 1px solid var(--border-color);
   background-color: #fff;
 }
@@ -168,8 +168,8 @@
 }
 
 .right-info-pane {
-  flex: 0 0 280px; /* 右ペインも固定幅 */
-  max-width: 280px;
+  flex: 0 0 340px; /* 右ペインも固定幅を広げる */
+  max-width: 340px;
   border-left: 1px solid var(--border-color);
   background-color: #fff;
 }
