@@ -697,3 +697,346 @@ export const historyBasicSourcesChapter2Part1Contents: ContentItem[] = [
     ]
   }
 ];
+
+export const historyBasicSourcesChapter2Part2Contents: ContentItem[] = [
+  {
+    id: "history-basic-sources-comparison-interpretation-summary",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "section-summary",
+    title: "資料の比較と解釈",
+    body: "この節では、複数の資料を比較し、資料どうしの共通点や違いから歴史を考える方法を学ぶ。1つの資料だけでは分かりにくいことも、異なる立場・時期・種類の資料を比べることで、出来事の背景や人々の見方の違いが見えてくる。資料を比較するときは、資料の内容だけでなく、作成者、作成時期、作成目的、資料の種類にも注目する。",
+    shortText: "複数の資料を比較し、共通点や違いから歴史を考える。",
+    order: 1,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域差", "情報化"],
+    sourceTags: ["史料", "公文書", "写真", "地図", "統計", "グラフ", "表", "風刺画"],
+    examTags: ["資料読解", "比較問題", "記述対策", "正誤問題注意"],
+    skillTags: ["資料読解", "比較", "分類", "因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "資料の読み取り",
+        relation: "background",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      },
+      {
+        label: "歴史の叙述と問いの立て方",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-multiple-sources-term",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "複数資料の照合",
+    body: "複数資料の照合とは、複数の資料を比べて、共通する情報や食い違う情報を確認することである。例えば、政府の公文書、新聞記事、個人の日記、写真、統計資料を比べると、同じ出来事でも立場や関心によって記録のされ方が違うことが分かる。",
+    shortText: "複数の資料を比べ、共通点や相違点を確認すること。",
+    order: 2,
+    frontText: "複数資料の照合",
+    backText: "複数の資料を比べて、共通する情報や食い違う情報を確認すること。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "情報化"],
+    sourceTags: ["史料", "公文書", "写真", "統計", "表"],
+    examTags: ["基本用語", "資料読解", "比較問題"],
+    skillTags: ["資料読解", "比較", "分類", "要約"],
+    relatedHints: [
+      {
+        label: "資料批判",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-differences-comparison",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "comparison-note",
+    title: "資料の共通点と相違点",
+    body: "資料を比較するときは、同じ内容が複数の資料で確認できるか、逆に資料によって説明が違う部分はどこかを整理する。共通点は、比較的確かな情報を考える手がかりになる。一方、相違点は、作成者の立場や目的、時期の違いを考える入口になる。違いがあるから誤りと決めつけるのではなく、なぜ違いが生じたのかを考えることが重要である。",
+    shortText: "資料の共通点と相違点を整理し、違いの理由を考える。",
+    order: 3,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域差"],
+    sourceTags: ["史料", "公文書", "写真", "統計", "グラフ", "表"],
+    examTags: ["資料読解", "比較問題", "記述対策"],
+    skillTags: ["資料読解", "比較", "因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "立場の違いと歴史解釈",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-source-criticism-term",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "資料批判",
+    body: "資料批判とは、資料の内容をそのまま受け取るのではなく、作成者、作成時期、作成目的、保存状況、資料の種類などを確認し、資料としてどこまで信頼できるかを吟味することである。批判という言葉は否定するという意味ではなく、根拠としての使い方を慎重に考えるという意味で使われる。",
+    shortText: "資料の信頼性や限界を吟味する作業。",
+    order: 4,
+    frontText: "資料批判",
+    backText: "資料の作成者・時期・目的・種類などを確認し、根拠としてどこまで使えるかを吟味すること。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "情報化"],
+    sourceTags: ["史料", "公文書", "写真", "統計", "風刺画"],
+    examTags: ["重要用語", "資料読解", "正誤問題注意"],
+    skillTags: ["資料読解", "比較", "要約", "論述"],
+    relatedHints: [
+      {
+        label: "公共のメディアリテラシー",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["情報化", "社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-interpretation-term",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "歴史解釈",
+    body: "歴史解釈とは、資料から読み取った情報をもとに、過去の出来事の意味や背景、影響を考えることである。同じ資料を使っていても、どの点を重視するかによって説明の仕方が変わることがある。歴史解釈では、自由に感想を述べるのではなく、資料や事実を根拠にして説明することが必要である。",
+    shortText: "資料を根拠に、出来事の意味・背景・影響を考えること。",
+    order: 5,
+    frontText: "歴史解釈",
+    backText: "資料から読み取った情報をもとに、過去の出来事の意味・背景・影響を考えること。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "因果関係"],
+    sourceTags: ["史料", "公文書", "統計", "年表"],
+    examTags: ["重要用語", "記述対策", "論述対策"],
+    skillTags: ["資料読解", "因果関係", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "歴史の叙述",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-interpretation-flow",
+    curriculumNodeId: "history-basic-section-1-2-3",
+    subjectId: "history-basic",
+    type: "flow-note",
+    title: "資料比較から解釈へ進む流れ",
+    body: "資料を比較して歴史を解釈するときは、まず資料から直接読み取れる情報を整理し、次に資料どうしの共通点と相違点を確認する。そのうえで、違いが生じた理由を、作成者の立場、時期、目的、社会背景から考える。最後に、複数の資料を根拠として、出来事の意味や影響を説明する。",
+    shortText: "読み取り、比較、理由の検討、説明へ進む資料解釈の流れ。",
+    order: 6,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "因果関係"],
+    sourceTags: ["史料", "公文書", "写真", "統計", "年表"],
+    examTags: ["資料読解", "記述対策", "論述対策"],
+    skillTags: ["資料読解", "比較", "因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "問いを立てて歴史を説明する学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["社会"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-narrative-question-summary",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "section-summary",
+    title: "歴史の叙述と問いの立て方",
+    body: "この節では、歴史が資料を根拠にして叙述されることと、歴史を学ぶためには問いを立てることが重要であることを学ぶ。歴史叙述は、出来事をただ順番に並べるだけではなく、なぜ起きたのか、どのように変化したのか、何に影響したのかを説明する営みである。よい問いを立てることで、資料を調べる目的が明確になる。",
+    shortText: "資料を根拠に歴史を叙述し、問いを立てて考える方法を学ぶ。",
+    order: 7,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "因果関係", "地域性"],
+    sourceTags: ["史料", "年表", "地図", "統計"],
+    examTags: ["資料読解", "記述対策", "論述対策", "因果関係"],
+    skillTags: ["資料読解", "時系列整理", "因果関係", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "近代化と私たちの主題学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["近代化", "産業革命", "国民国家"]
+      },
+      {
+        label: "国際秩序の変化や大衆化と私たちの主題学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["国際秩序", "大衆化", "民主化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-historical-narrative-term",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "歴史叙述",
+    body: "歴史叙述とは、資料や事実を根拠にして、過去の出来事や変化を筋道立てて説明することである。単に年号や出来事を並べるだけではなく、背景、原因、展開、結果、影響を関連付けて説明する点が重要である。",
+    shortText: "資料や事実を根拠に、過去の出来事や変化を説明すること。",
+    order: 8,
+    frontText: "歴史叙述",
+    backText: "資料や事実を根拠にして、過去の出来事や変化を筋道立てて説明すること。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "因果関係"],
+    sourceTags: ["史料", "年表", "地図", "統計"],
+    examTags: ["重要用語", "記述対策", "論述対策"],
+    skillTags: ["時系列整理", "因果関係", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "歴史総合全体の説明・論述活動",
+        relation: "influence",
+        targetSubjectId: "history-basic",
+        conceptTags: ["近代化", "大衆化", "グローバル化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-historical-question-term",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "term-card",
+    title: "歴史的な問い",
+    body: "歴史的な問いとは、過去の出来事や変化について、資料を根拠にして考えるための問いである。例えば、「なぜ産業革命は社会を大きく変えたのか」「第一次世界大戦は人々の政治参加にどのような影響を与えたのか」「グローバル化は地域社会をどのように変えたのか」といった問いが考えられる。",
+    shortText: "資料を根拠に、過去の出来事や変化を考えるための問い。",
+    order: 9,
+    frontText: "歴史的な問い",
+    backText: "過去の出来事や変化について、資料を根拠に考えるための問い。",
+    isMemorizationTarget: true,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    eventTags: ["産業革命", "第一次世界大戦", "第二次世界大戦", "冷戦"],
+    conceptTags: ["近代化", "大衆化", "グローバル化", "因果関係"],
+    sourceTags: ["史料", "年表", "地図", "統計"],
+    examTags: ["重要用語", "記述対策", "論述対策", "因果関係"],
+    skillTags: ["因果関係", "論述", "要約", "時系列整理"],
+    relatedHints: [
+      {
+        label: "歴史総合の三つの大きな見通し",
+        relation: "reference",
+        targetSubjectId: "history-basic",
+        conceptTags: ["近代化", "大衆化", "グローバル化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-question-making-flow",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "flow-note",
+    title: "問いを立てる手順",
+    body: "歴史の問いを立てるときは、まず身近な事象や資料から気付いたことを出発点にする。次に、いつ、どこで、誰が、なぜ、どのように、どのような影響を与えたのかを考える。さらに、複数の資料で調べられる問いにすることで、根拠をもって説明しやすくなる。",
+    shortText: "気付きから出発し、資料で調べられる問いへ整理する手順。",
+    order: 10,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域性", "因果関係"],
+    sourceTags: ["史料", "写真", "地図", "年表", "統計"],
+    examTags: ["資料読解", "記述対策", "論述対策"],
+    skillTags: ["資料読解", "因果関係", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "探究的な学習での問いづくり",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["社会", "地域性"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-narrative-structure-flow",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "flow-note",
+    title: "歴史を説明する基本構成",
+    body: "歴史を説明するときは、背景、原因、展開、結果、影響の流れを意識すると整理しやすい。例えば、ある制度が成立した背景を確認し、成立の原因や過程を説明し、その結果として社会がどう変わり、後の時代や他地域にどのような影響を与えたのかをまとめる。この構成は、歴史総合の近代化・大衆化・グローバル化の各単元でも使うことができる。",
+    shortText: "背景・原因・展開・結果・影響で歴史を説明する。",
+    order: 11,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["因果関係", "近代化", "大衆化", "グローバル化"],
+    sourceTags: ["年表", "地図", "史料", "統計"],
+    examTags: ["因果関係", "記述対策", "論述対策", "共通テスト頻出"],
+    skillTags: ["時系列整理", "因果関係", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "近代化の流れを説明する学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["近代化", "産業革命", "国民国家"]
+      },
+      {
+        label: "大衆化と総力戦の流れを説明する学習",
+        relation: "effect",
+        targetSubjectId: "history-basic",
+        conceptTags: ["大衆化", "総力戦", "民主化"]
+      }
+    ]
+  },
+  {
+    id: "history-basic-sources-no-single-story-supplement",
+    curriculumNodeId: "history-basic-section-1-2-4",
+    subjectId: "history-basic",
+    type: "supplement-note",
+    title: "歴史叙述は一つに固定されない",
+    body: "歴史叙述は、資料を根拠にして行う必要があるが、常に一つの説明だけに固定されるわけではない。新しい資料が見つかったり、別の地域・立場から見直したりすることで、説明の仕方が変わることがある。ただし、どのような解釈でもよいという意味ではなく、資料や事実に基づいて筋道立てて説明することが必要である。",
+    shortText: "歴史叙述は変わり得るが、資料と事実に基づく必要がある。",
+    order: 12,
+    periodLabel: "歴史学習の方法",
+    datePrecision: "period",
+    regionTags: ["日本", "世界"],
+    conceptTags: ["社会", "地域差", "多文化共生"],
+    sourceTags: ["史料", "公文書", "写真", "統計"],
+    examTags: ["誤解注意", "記述対策", "論述対策"],
+    skillTags: ["資料読解", "比較", "論述", "要約"],
+    relatedHints: [
+      {
+        label: "世界史探究・日本史探究での多面的考察",
+        relation: "influence",
+        targetSubjectId: "world-history-advanced",
+        conceptTags: ["社会", "地域差"]
+      },
+      {
+        label: "日本史探究での史料読解",
+        relation: "influence",
+        targetSubjectId: "japanese-history-advanced",
+        conceptTags: ["社会"]
+      }
+    ]
+  }
+];

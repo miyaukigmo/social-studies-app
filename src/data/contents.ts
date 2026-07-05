@@ -1,6 +1,6 @@
 import type { ContentItem } from "../types/content";
 import { ethicsYouthSelfFormationContents, ethicsYouthSelfFormationContentsPart2, ethicsYouthSelfFormationContentsPart3 } from "./contentsEthics";
-import { historyBasicHistoryDoorChapter1Contents, historyBasicSourcesChapter2Part1Contents } from "./contentsHistoryBasic";
+import { historyBasicHistoryDoorChapter1Contents, historyBasicSourcesChapter2Part1Contents, historyBasicSourcesChapter2Part2Contents } from "./contentsHistoryBasic";
 
 const TIME_DIFFERENCE_SECTION_ID = "geobasic-p1-c1-s3";
 
@@ -2364,4 +2364,5 @@ export const contents: ContentItem[] = [
   ...ethicsYouthSelfFormationContentsPart3,
   ...historyBasicHistoryDoorChapter1Contents,
   ...historyBasicSourcesChapter2Part1Contents,
+  ...historyBasicSourcesChapter2Part2Contents,
 ];
