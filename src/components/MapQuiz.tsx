@@ -305,7 +305,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
             maxWidth: '500px'
           }}>
             <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#333' }}>
-              赤く塗られた国はどこ？
+              オレンジ色に塗られた国はどこ？
             </div>
             
             <div style={{ display: 'flex', width: '100%', gap: '10px' }}>
