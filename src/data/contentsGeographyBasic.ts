@@ -327,3 +327,272 @@ export const geographyBasicPositionContents: ContentItem[] = [
     ]
   }
 ];
+
+export const geographyBasicMapProjectionContents: ContentItem[] = [
+  {
+    id: "geography-basic-map-projection-summary",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "section-summary",
+    title: "球面上の世界と地図表現",
+    body: "地球は球体に近い形をしているため、平面の地図に表すと、面積・方位・距離・形のどこかに必ずゆがみが生じる。地図は現実の世界をそのまま写したものではなく、目的に合わせて情報を選び、変形して表したものである。地図を読むときは、どの図法が何を正しく表し、何をゆがめているのかを意識することが重要である。",
+    shortText: "球面である地球を平面地図に表すときのゆがみと図法の違いを扱う。",
+    order: 1,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "分布", "地域性"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "空間認識", "比較"],
+    relatedReferenceIds: ["map-world-projection-comparison"],
+    relatedHints: [
+      {
+        label: "主題図の読み取り",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-globe-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "地球儀",
+    body: "地球儀は、地球を球体に近い形で表した模型である。面積・方位・距離・形のゆがみが少なく、地球全体の大まかな位置関係を理解しやすい。一方で、持ち運びや細かい情報の表示には向きにくく、一度に地球全体を平面として見ることはできない。",
+    shortText: "地球を球体に近い形で表した模型。",
+    order: 2,
+    frontText: "地球儀",
+    backText: "地球を球体に近い形で表した模型。ゆがみが少ないが、細かい情報表示や一覧性には限界がある。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "地域性"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "空間認識"],
+    relatedReferenceIds: ["map-world-globe"]
+  },
+  {
+    id: "geography-basic-map-projection-map-projection-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "地図投影法",
+    body: "地図投影法とは、球面上の地球を平面の地図に表す方法のことである。球面を平面に完全に正しく写すことはできないため、面積・方位・距離・形のうち、何を重視するかによってさまざまな図法が使い分けられる。",
+    shortText: "球面上の地球を平面地図に表す方法。",
+    order: 3,
+    frontText: "地図投影法",
+    backText: "球面上の地球を平面地図に表す方法。面積・方位・距離・形のどこかにゆがみが生じる。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "分布"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "空間認識", "比較"],
+    relatedReferenceIds: ["map-world-projection-comparison"]
+  },
+  {
+    id: "geography-basic-map-projection-distortion-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "地図のゆがみ",
+    body: "地図のゆがみとは、球面の地球を平面に表すときに、面積・方位・距離・形が実際とは異なって表されることである。特に世界全体を表す地図では、どこかに必ずゆがみが生じる。地図を読むときは、その地図が何を正しく表すために作られているのかを確認する必要がある。",
+    shortText: "球面を平面に表すことで生じる面積・方位・距離・形のずれ。",
+    order: 4,
+    frontText: "地図のゆがみ",
+    backText: "球面の地球を平面に表すとき、面積・方位・距離・形が実際とは異なって表されること。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "分布"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "比較", "資料読解"],
+    relatedReferenceIds: ["map-world-projection-comparison"]
+  },
+  {
+    id: "geography-basic-map-projection-mercator-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "メルカトル図法",
+    body: "メルカトル図法は、緯線と経線が直角に交わる世界地図の図法である。角度が正しく表されるため、一定の方位で進む航路を直線で示しやすく、航海図に利用されてきた。一方で、高緯度ほど面積が大きく表されるため、グリーンランドや南極大陸などは実際より大きく見える。",
+    shortText: "角度を正しく表すが、高緯度の面積が大きく見える図法。",
+    order: 5,
+    frontText: "メルカトル図法",
+    backText: "角度を正しく表し、航海図に向く図法。ただし高緯度ほど面積が大きく表される。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "交通"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "比較", "空間認識"],
+    relatedReferenceIds: ["map-world-mercator"],
+    relatedHints: [
+      {
+        label: "交通・通信の発達",
+        relation: "example",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["交通", "地図"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-equidistant-azimuthal-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "正距方位図法",
+    body: "正距方位図法は、中心から各地点への方位と距離を正しく表す図法である。例えば、東京を中心にした正距方位図法の地図では、東京から世界各地への最短距離や方位を考えやすい。航空路や通信、国際的な結びつきを考えるときに役立つ。",
+    shortText: "中心から各地点への方位と距離を正しく表す図法。",
+    order: 6,
+    frontText: "正距方位図法",
+    backText: "中心から各地点への方位と距離を正しく表す図法。航空路や国際的な結びつきの理解に役立つ。",
+    isMemorizationTarget: true,
+    regionTags: ["世界", "日本", "東京"],
+    conceptTags: ["地図", "位置", "交通", "情報化"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "空間認識", "比較"],
+    relatedReferenceIds: ["map-world-azimuthal-equidistant-tokyo"],
+    relatedHints: [
+      {
+        label: "航空交通と世界の結びつき",
+        relation: "example",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["交通", "グローバル化", "位置"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-equal-area-term",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "term-card",
+    title: "面積を正しく表す図法",
+    body: "面積を正しく表す図法では、大陸や国の面積の大小関係を比較しやすい。人口分布、農業地域、森林面積、資源分布など、面積の広がりを読み取る主題図に向いている。一方で、形や方位はゆがむことがあるため、何を読み取る地図なのかを確認する必要がある。",
+    shortText: "面積の大小関係を比較しやすい図法。",
+    order: 7,
+    frontText: "面積を正しく表す図法",
+    backText: "面積の大小関係を正しく比較しやすい図法。分布や主題図の読み取りに向く。",
+    isMemorizationTarget: true,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "分布", "人口", "農業", "資源"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "統計読解", "比較"],
+    relatedReferenceIds: ["map-world-equal-area"],
+    relatedHints: [
+      {
+        label: "主題図の読み取り",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-purpose-map",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "map-note",
+    title: "目的に応じた地図の使い分け",
+    body: "地図は、目的に応じて使い分ける必要がある。航路や方位を考えるならメルカトル図法や正距方位図法が役立つ。国や大陸の面積を比較するなら、面積を正しく表す図法が適している。人口や資源の分布を読むなら、主題図として何が強調されているかを確認することが大切である。",
+    shortText: "地図は、航路・方位・面積・分布など目的に応じて使い分ける。",
+    order: 8,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "分布", "位置", "交通", "資源", "人口"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "資料読解", "比較", "空間認識"],
+    relatedReferenceIds: ["map-world-projection-comparison"],
+    relatedHints: [
+      {
+        label: "地図の種類と役割",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-comparison",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "comparison-note",
+    title: "図法ごとの特徴比較",
+    body: "メルカトル図法は角度を正しく表し、航海図に向いているが、高緯度の面積が大きく見える。正距方位図法は中心からの方位と距離を正しく表し、航空路や通信の理解に向いている。面積を正しく表す図法は、国や大陸の面積比較、人口や資源の分布を読むときに役立つ。地図の図法は、正解を一つ覚えるのではなく、目的に応じて選ぶものとして理解する。",
+    shortText: "図法ごとに、正しく表せるものとゆがむものが異なる。",
+    order: 9,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "分布", "交通", "資源", "人口"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["比較", "地図読解", "資料読解", "空間認識"],
+    relatedReferenceIds: ["map-world-projection-comparison"]
+  },
+  {
+    id: "geography-basic-map-projection-web-map-supplement",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "supplement-note",
+    title: "ウェブ地図を見るときの注意",
+    body: "スマートフォンやパソコンの地図は便利だが、表示範囲、縮尺、中心位置、投影法によって見え方が変わる。拡大・縮小しながら見る地図では、今見ている情報が世界全体の中でどの位置にあるのかを意識しにくいこともある。ウェブ地図を使うときも、縮尺、方位、凡例、出典を確認する習慣が必要である。",
+    shortText: "ウェブ地図でも、縮尺・方位・凡例・出典を確認する必要がある。",
+    order: 10,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "GIS", "情報化", "位置"],
+    sourceTags: ["地図", "GIS資料"],
+    skillTags: ["地図読解", "資料読解", "空間認識"],
+    relatedHints: [
+      {
+        label: "GISの基本",
+        relation: "background",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["GIS", "地図", "情報化"],
+        regionTags: ["世界"]
+      }
+    ]
+  },
+  {
+    id: "geography-basic-map-projection-misreading-supplement",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "supplement-note",
+    title: "地図をそのまま世界の姿だと思わない",
+    body: "世界地図は、実際の地球を完全にそのまま表したものではない。例えば、メルカトル図法では高緯度地域が大きく見えるため、国や大陸の面積感覚を誤りやすい。地図を読むときは、地図が作られた目的、使われている図法、凡例や縮尺を確認し、見え方に偏りがある可能性を考えることが大切である。",
+    shortText: "地図には必ず表現上の偏りやゆがみがある。",
+    order: 11,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "地域性", "分布"],
+    sourceTags: ["地図"],
+    skillTags: ["地図読解", "資料読解", "比較"],
+    examTags: ["正誤問題注意", "資料読解"]
+  },
+  {
+    id: "geography-basic-map-projection-globalization-crosslink",
+    curriculumNodeId: "geography-basic-section-1-1-4",
+    subjectId: "geography-basic",
+    type: "crosslink-note",
+    title: "地図表現と世界の見え方",
+    body: "地図表現の違いは、世界の見え方にも影響する。中心に置く地域や使う図法によって、近く見える地域、遠く見える地域、大きく見える地域が変わる。これは、交通、貿易、観光、国際関係を考えるときにも重要である。地図を読むことは、世界をどの視点から見ているのかを考えることでもある。",
+    shortText: "図法や中心の置き方によって、世界の見え方は変わる。",
+    order: 12,
+    regionTags: ["世界"],
+    conceptTags: ["地図", "位置", "交通", "貿易", "観光", "グローバル化"],
+    sourceTags: ["地図", "主題図"],
+    skillTags: ["地図読解", "空間認識", "比較"],
+    relatedHints: [
+      {
+        label: "グローバル化する世界",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["グローバル化", "交通", "貿易", "観光"],
+        regionTags: ["世界"]
+      },
+      {
+        label: "主題図の読み取り",
+        relation: "reference",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["地図", "分布"],
+        regionTags: ["世界"]
+      }
+    ]
+  }
+];
