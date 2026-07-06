@@ -1156,3 +1156,346 @@ export const politicsEconomicsDemocracyPrinciplesPart3Contents: ContentItem[] = 
     skillTags: ["論述", "因果関係"]
   }
 ];
+
+export const politicsEconomicsDemocracyPrinciplesPart4Contents: ContentItem[] = [
+  {
+    id: "politics-economics-democracy-issues-summary",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "現代民主政治の課題",
+    body: "現代民主政治では、国民主権や人権保障の原理を制度として整えるだけでなく、国民が政治に関心をもち、公正な情報に基づいて判断し、政治に参加することが重要である。しかし、政治的無関心、投票率の低下、世論操作、メディアやSNSによる情報の偏り、ポピュリズム、少数者の権利保障など、多くの課題がある。民主政治を維持するには、制度だけでなく、市民の判断力と参加が必要である。",
+    shortText: "政治参加・世論・メディア・ポピュリズムなど、現代民主政治の課題を扱う。",
+    order: 1,
+    conceptTags: ["民主主義", "国民主権", "政治参加", "世論", "政治的無関心", "投票率", "メディアリテラシー", "ポピュリズム", "少数意見の尊重"],
+    institutionTags: ["選挙制度"],
+    examTags: ["現代社会との関連", "論述対策", "重要用語"],
+    skillTags: ["要約", "論述", "資料読解"],
+    relatedHints: [
+      {
+        label: "参政権と選挙制度",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["参政権", "政治参加", "国民主権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-political-participation-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "政治参加",
+    body: "政治参加とは、国民や住民が政治の意思決定に関わることである。選挙で投票することだけでなく、請願、住民投票、デモ、署名活動、政党や市民団体での活動、政治について意見を表明することなども含まれる。政治参加は、国民主権を実際に機能させるために重要である。",
+    shortText: "国民や住民が政治の意思決定に関わること。",
+    order: 2,
+    frontText: "政治参加",
+    backText: "国民や住民が政治の意思決定に関わること。投票、請願、住民投票、署名活動、意見表明などを含む。",
+    isMemorizationTarget: true,
+    conceptTags: ["政治参加", "国民主権", "民主主義", "参政権", "社会参加"],
+    institutionTags: ["選挙制度", "地方公共団体"],
+    lawTags: ["日本国憲法", "日本国憲法第15条", "日本国憲法第16条"],
+    relatedReferenceIds: ["constitution-article-15", "constitution-article-16"],
+    examTags: ["基本用語", "重要用語", "現代社会との関連"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "公共における社会参加",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["社会参加", "政治参加", "民主主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-voting-right-age-source",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "source-note",
+    title: "18歳選挙権と主権者教育",
+    body: "日本では、2015年の公職選挙法改正により、選挙権年齢が20歳以上から18歳以上へ引き下げられた。これは、若い世代の意見を政治に反映させることを目的とする。高校政治・経済では、選挙権をもつことだけでなく、情報を集め、候補者や政策を比較し、自分の判断で政治に参加する力が重要になる。",
+    shortText: "18歳選挙権を通じて、若者の政治参加と主権者教育を考える。",
+    order: 3,
+    startYear: 2015,
+    datePrecision: "year",
+    regionTags: ["日本"],
+    conceptTags: ["政治参加", "参政権", "国民主権", "主権者教育", "若者の政治参加"],
+    institutionTags: ["選挙制度"],
+    lawTags: ["公職選挙法"],
+    sourceTags: ["公文書"],
+    examTags: ["現代社会との関連", "資料読解", "年号暗記"],
+    skillTags: ["資料読解", "要約"],
+    relatedHints: [
+      {
+        label: "参政権",
+        relation: "example",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["参政権", "政治参加", "国民主権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-political-apathy-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "政治的無関心",
+    body: "政治的無関心とは、政治に対する関心や参加意識が低い状態である。政治は自分の生活に関係がないと感じたり、投票しても社会は変わらないと考えたりすることで、投票率の低下や政治参加の停滞につながる。民主政治では、政治的無関心が広がると、一部の人々の意見だけが政治に反映されやすくなる。",
+    shortText: "政治への関心や参加意識が低い状態。",
+    order: 4,
+    frontText: "政治的無関心",
+    backText: "政治への関心や参加意識が低い状態。投票率低下や政治参加の停滞につながる。",
+    isMemorizationTarget: true,
+    conceptTags: ["政治的無関心", "政治参加", "投票率", "民主主義", "国民主権"],
+    institutionTags: ["選挙制度"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "因果関係"],
+    relatedHints: [
+      {
+        label: "投票率と代表民主制",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["投票率", "代表民主制", "政治参加"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-turnout-supplement",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "投票率低下の問題",
+    body: "投票率が低下すると、選挙結果が国民全体の意思を十分に反映しているのかが問題になる。特に若い世代の投票率が低い場合、政治家や政党は投票に行く層を重視しやすくなり、若い世代の課題が政策に反映されにくくなる可能性がある。投票率の問題は、代表民主制の正統性や世代間の公平とも関係する。",
+    shortText: "投票率低下が代表民主制や世代間公平に与える影響を扱う。",
+    order: 5,
+    conceptTags: ["投票率", "政治参加", "代表民主制", "若者の政治参加", "世代間公平", "民主主義"],
+    institutionTags: ["選挙制度", "政党"],
+    examTags: ["現代社会との関連", "論述対策", "資料読解"],
+    skillTags: ["因果関係", "論述", "統計読解"],
+    relatedHints: [
+      {
+        label: "少子高齢化と世代間公平",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["少子高齢化", "世代間公平", "社会保障"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-public-opinion-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "世論",
+    body: "世論とは、政治や社会問題について、多くの人々が共有する意見や考え方である。民主政治では、世論は政治を動かす重要な力になる。ただし、世論はメディアの報道、SNS上の情報、世論調査の設問、感情的な反応などによって影響を受けるため、公正な世論形成が重要である。",
+    shortText: "政治や社会問題について、多くの人々が共有する意見や考え方。",
+    order: 6,
+    frontText: "世論",
+    backText: "政治や社会問題について、多くの人々が共有する意見や考え方。",
+    isMemorizationTarget: true,
+    conceptTags: ["世論", "民主主義", "政治参加", "メディアリテラシー", "情報リテラシー"],
+    sourceTags: ["統計", "グラフ"],
+    examTags: ["重要用語", "資料読解", "現代社会との関連"],
+    skillTags: ["用語説明", "資料読解", "統計読解"],
+    relatedHints: [
+      {
+        label: "メディアと民主政治",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["世論", "メディアリテラシー", "民主主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-media-role-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "メディアと民主政治",
+    body: "メディアは、政治や社会の情報を人々に伝え、権力を監視し、世論形成に影響を与える役割をもつ。新聞、テレビ、インターネット、SNSなどを通じて、人々は政治情報を得る。しかし、情報の選び方や伝え方には偏りが生じることもあるため、複数の情報源を比較し、根拠を確認する姿勢が必要である。",
+    shortText: "メディアの情報伝達・権力監視・世論形成の役割を理解する。",
+    order: 7,
+    frontText: "メディアの政治的役割",
+    backText: "政治情報を伝えること、権力を監視すること、世論形成に影響を与えること。",
+    isMemorizationTarget: true,
+    conceptTags: ["メディア", "世論", "民主主義", "政治参加", "メディアリテラシー", "情報リテラシー"],
+    sourceTags: ["新聞", "グラフ", "統計"],
+    examTags: ["現代社会との関連", "資料読解", "論述対策"],
+    skillTags: ["資料読解", "比較", "論述"],
+    relatedHints: [
+      {
+        label: "表現の自由と知る権利",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["表現の自由", "知る権利", "世論"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-sns-fake-news-supplement",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "SNSとフェイクニュース",
+    body: "SNSは、個人が政治的意見を発信しやすくし、政治参加のきっかけを広げる一方で、誤情報やフェイクニュースが急速に広がる危険もある。また、自分と似た意見ばかりに触れることで、社会の意見分布を誤って理解することもある。現代民主政治では、情報を受け取る側のメディアリテラシーや情報リテラシーが重要になる。",
+    shortText: "SNSによる政治参加の広がりと、誤情報拡散の危険を扱う。",
+    order: 8,
+    conceptTags: ["SNS", "フェイクニュース", "メディアリテラシー", "情報リテラシー", "世論", "政治参加", "民主主義"],
+    sourceTags: ["統計", "グラフ"],
+    examTags: ["現代社会との関連", "論述対策", "誤解注意"],
+    skillTags: ["資料読解", "比較", "論述"],
+    relatedHints: [
+      {
+        label: "情報化社会と新しい人権",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["情報化", "プライバシーの権利", "知る権利", "メディアリテラシー"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-populism-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "ポピュリズム",
+    body: "ポピュリズムとは、一般に、既存の政治家や専門家、エリートへの不信を背景に、人々の不満や感情に直接訴える政治手法や運動を指す。民意を重視する点で民主政治と関係するが、複雑な問題を単純化したり、少数者の権利を軽視したりする危険もある。",
+    shortText: "人々の不満や感情に直接訴える政治手法や運動。",
+    order: 9,
+    frontText: "ポピュリズム",
+    backText: "既存政治や専門家への不信を背景に、人々の不満や感情に直接訴える政治手法や運動。",
+    isMemorizationTarget: true,
+    conceptTags: ["ポピュリズム", "民主主義", "世論", "少数意見の尊重", "多数者の専制"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "論述"],
+    relatedHints: [
+      {
+        label: "多数決と少数意見の尊重",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["民主主義", "多数決", "少数意見の尊重"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-majority-tyranny-supplement",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "多数者の専制",
+    body: "多数者の専制とは、多数派の意思が絶対視され、少数派の権利や意見が不当に抑えられる状態である。民主政治では多数決が必要になる場面が多いが、多数決だけで民主主義が成り立つわけではない。基本的人権、法の支配、立憲主義は、多数派の権力濫用から少数者を守る役割をもつ。",
+    shortText: "多数派の意思が絶対視され、少数派の権利が損なわれる問題を扱う。",
+    order: 10,
+    conceptTags: ["多数者の専制", "多数決", "少数意見の尊重", "基本的人権", "法の支配", "立憲主義", "民主主義"],
+    examTags: ["誤解注意", "論述対策", "比較問題"],
+    skillTags: ["論述", "比較", "因果関係"],
+    relatedHints: [
+      {
+        label: "公共の福祉と権利の調整",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["公共の福祉", "権利の調整", "基本的人権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-civil-society-term",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "市民社会",
+    body: "市民社会とは、国家や市場だけに任せるのではなく、市民が自発的に公共的な課題に関わる社会のあり方である。NPO、NGO、ボランティア、市民団体などの活動は、行政だけでは対応しきれない課題に取り組み、民主政治を支える役割をもつ。",
+    shortText: "市民が自発的に公共的課題に関わる社会のあり方。",
+    order: 11,
+    frontText: "市民社会",
+    backText: "市民が自発的に公共的な課題に関わる社会のあり方。NPO・NGO・ボランティアなどの活動と関係する。",
+    isMemorizationTarget: true,
+    conceptTags: ["市民社会", "政治参加", "社会参加", "ボランティア", "民主主義", "公共"],
+    institutionTags: ["NPO", "NGO"],
+    examTags: ["重要用語", "現代社会との関連"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "公共における社会参加とボランティア",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["社会参加", "ボランティア", "公共", "市民社会"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-deliberative-democracy-thought",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "thought-card",
+    title: "熟議民主主義",
+    body: "熟議民主主義とは、人々が十分な情報をもとに話し合い、理由を示し合いながら合意や判断を形成することを重視する民主主義の考え方である。単に多数決で決めるだけでなく、異なる立場の意見を聞き、少数意見もふまえて判断する点が重要である。",
+    shortText: "十分な情報と話し合いを通じて判断を形成する民主主義の考え方。",
+    order: 12,
+    frontText: "熟議民主主義",
+    backText: "人々が十分な情報をもとに話し合い、理由を示し合いながら合意や判断を形成することを重視する民主主義の考え方。",
+    isMemorizationTarget: true,
+    conceptTags: ["熟議民主主義", "民主主義", "政治参加", "少数意見の尊重", "世論"],
+    examTags: ["発展", "論述対策", "現代社会との関連"],
+    skillTags: ["論述", "比較", "要約"],
+    relatedHints: [
+      {
+        label: "公共における合意形成",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["合意形成", "民主主義", "熟議民主主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-issues-flow",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "flow-note",
+    title: "現代民主政治の課題の流れ",
+    body: "民主政治は、国民が政治の主体となる制度である。しかし、政治的無関心が広がると投票率が低下し、特定の層の意見だけが政治に反映されやすくなる。また、メディアやSNSの影響で世論が偏ったり、感情的な対立が強まったりすることもある。こうした課題に対して、主権者教育、メディアリテラシー、熟議、少数意見の尊重、市民社会の活動が重要になる。",
+    shortText: "政治的無関心・情報環境・世論の課題から、主権者教育や熟議へつなげる。",
+    order: 13,
+    conceptTags: ["民主主義", "政治参加", "政治的無関心", "投票率", "世論", "メディアリテラシー", "熟議民主主義", "市民社会", "少数意見の尊重"],
+    examTags: ["論述対策", "因果関係", "現代社会との関連"],
+    skillTags: ["因果関係", "要約", "論述"],
+    relatedHints: [
+      {
+        label: "選挙制度と政党政治",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["選挙制度", "政党", "政治参加", "代表民主制"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-principles-crosslink-note",
+    curriculumNodeId: "politics-economics-section-1-1-12",
+    subjectId: "politics-economics",
+    type: "crosslink-note",
+    title: "第1章全体の接続",
+    body: "民主政治の基本原理は、政治とは何か、国家権力とは何か、民主政治はどのように成立したか、法の支配や立憲主義はなぜ必要か、基本的人権をどう保障するか、という流れで理解する。現代民主政治の課題は、この原理が現実社会でうまく機能しているかを問い直す単元である。今後の国会・内閣・裁判所・選挙制度・政党政治の学習にもつながる。",
+    shortText: "民主政治の基本原理を、今後の政治制度学習へ接続する。",
+    order: 14,
+    conceptTags: ["民主主義", "国家", "国民主権", "法の支配", "立憲主義", "権力分立", "基本的人権", "政治参加"],
+    institutionTags: ["国会", "内閣", "裁判所", "選挙制度", "政党"],
+    examTags: ["要約", "論述対策", "因果関係"],
+    skillTags: ["要約", "時系列整理", "因果関係"],
+    relatedHints: [
+      {
+        label: "国会・内閣・裁判所",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["三権分立", "権力分立", "議院内閣制"],
+        institutionTags: ["国会", "内閣", "裁判所"]
+      },
+      {
+        label: "選挙制度と政党政治",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["代表民主制", "政治参加", "政党"],
+        institutionTags: ["選挙制度"]
+      }
+    ]
+  }
+];
