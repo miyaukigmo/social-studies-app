@@ -55,13 +55,15 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
     }
   }, [quizState, currentIndex, feedback]);
 
-  const startQuiz = (type: 'random' | 'region' | 'tag', value: string | number) => {
+  const startQuiz = (type: 'random' | 'region' | 'tag' | 'retry', value: string | number | string[]) => {
     let filtered = [...quizCountries];
     
     if (type === 'region') {
       filtered = quizCountries.filter(c => c.region === value);
     } else if (type === 'tag') {
       filtered = quizCountries.filter(c => c.tags.includes(value as string));
+    } else if (type === 'retry') {
+      filtered = quizCountries.filter(c => (value as string[]).includes(c.id));
     }
     
     let shuffled = shuffleArray(filtered);
@@ -253,7 +255,24 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
             <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#2e8b57', marginBottom: '2rem' }}>
               {score} / {questions.length} 正解
             </div>
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {incorrectIds.length > 0 && (
+                <button 
+                  onClick={() => startQuiz('retry', incorrectIds)}
+                  style={{
+                    padding: '12px 24px',
+                    fontSize: '1.1rem',
+                    backgroundColor: '#ff9800',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontWeight: 'bold'
+                  }}
+                >
+                  間違えた国だけやり直す ({incorrectIds.length}問)
+                </button>
+              )}
               <button 
                 onClick={() => setQuizState('idle')}
                 style={{
@@ -266,7 +285,7 @@ export const MapQuiz: React.FC<MapQuizProps> = ({ onBack }) => {
                   cursor: 'pointer'
                 }}
               >
-                もう一度遊ぶ
+                メニューに戻る
               </button>
               <button 
                 onClick={onBack}
