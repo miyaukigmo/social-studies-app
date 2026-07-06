@@ -847,6 +847,27 @@ export const politicsEconomicsDemocracyPrinciplesPart3Contents: ContentItem[] = 
     ]
   },
   {
+    id: "politics-economics-rights-liberty-social-political-summary",
+    curriculumNodeId: "politics-economics-section-1-1-9",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "自由権・社会権・参政権",
+    body: "基本的人権は、国家から不当に干渉されない「自由権」、人間らしい生活を国家に求める「社会権」、国民が政治に参加する「参政権」などに大きく分けられる。自由権は近代市民革命期から重視され、社会権は資本主義の発展に伴う貧困・労働問題を背景に20世紀に確立した。現代の民主政治では、これらの権利が相互に関連しながら保障されている。",
+    shortText: "自由権・社会権・参政権の意味とそれぞれの歴史的背景を扱う。",
+    order: 4.5,
+    conceptTags: ["基本的人権", "自由権", "社会権", "参政権", "市民革命", "福祉国家"],
+    examTags: ["重要用語", "比較問題", "論述対策"],
+    skillTags: ["分類", "要約", "時系列整理"],
+    relatedHints: [
+      {
+        label: "人権の歴史的展開",
+        relation: "background",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["基本的人権", "自由権", "社会権"]
+      }
+    ]
+  },
+  {
     id: "politics-economics-rights-classification-comparison",
     curriculumNodeId: "politics-economics-section-1-1-9",
     subjectId: "politics-economics",
