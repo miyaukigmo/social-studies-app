@@ -352,3 +352,401 @@ export const politicsEconomicsDemocracyPrinciplesContents: ContentItem[] = [
     ]
   }
 ];
+
+export const politicsEconomicsDemocracyPrinciplesPart2Contents: ContentItem[] = [
+  {
+    id: "politics-economics-democracy-principles-summary",
+    curriculumNodeId: "politics-economics-section-1-1-4",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "民主政治の基本原理",
+    body: "民主政治とは、国民が政治の主体となり、国民の意思に基づいて政治を行うしくみである。ただし、民主政治は単に多数決で決めることだけを意味しない。国民主権、基本的人権の尊重、法の支配、立憲主義、権力分立などによって、権力の濫用を防ぎながら国民の自由と平等を守ることが重要である。",
+    shortText: "民主政治を、国民主権・人権保障・権力制限のしくみとして理解する。",
+    order: 1,
+    conceptTags: ["多数決", "民主主義", "国民主権", "基本的人権", "法の支配", "立憲主義", "権力分立"],
+    examTags: ["重要用語", "論述対策"],
+    skillTags: ["要約", "因果関係"],
+    relatedHints: [
+      {
+        label: "近代民主政治の成立",
+        relation: "background",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["市民革命", "人権", "国民主権", "立憲主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-democracy-term",
+    curriculumNodeId: "politics-economics-section-1-1-4",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "民主主義",
+    body: "民主主義とは、国民や市民が政治の主体となり、政治の決定に参加する考え方や制度である。現代国家では、国民が選挙で代表者を選び、その代表者が議会で政治を行う代表民主制が中心である。",
+    shortText: "国民や市民が政治の主体となる考え方や制度。",
+    order: 2,
+    frontText: "民主主義",
+    backText: "国民や市民が政治の主体となり、政治の決定に参加する考え方や制度。",
+    isMemorizationTarget: true,
+    conceptTags: ["民主主義", "国民主権", "代表民主制", "参政権"],
+    institutionTags: ["選挙制度", "国会"],
+    examTags: ["基本用語", "重要用語"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "参政権と選挙制度",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["参政権", "代表民主制", "国民主権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-popular-sovereignty-term",
+    curriculumNodeId: "politics-economics-section-1-1-4",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "国民主権",
+    body: "国民主権とは、国の政治の最終的な決定権が国民にあるという原理である。日本国憲法では、天皇主権ではなく国民主権が基本原理とされ、国民は選挙や国民投票などを通じて政治に関わる。",
+    shortText: "政治の最終的な決定権が国民にあるという原理。",
+    order: 3,
+    frontText: "国民主権",
+    backText: "国の政治の最終的な決定権が国民にあるという原理。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["国民主権", "民主主義", "参政権", "立憲主義"],
+    institutionTags: ["選挙制度"],
+    lawTags: ["日本国憲法", "日本国憲法第1条"],
+    relatedReferenceIds: ["constitution-article-1"],
+    examTags: ["重要用語", "入試頻出"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "大日本帝国憲法との比較",
+        relation: "contrast",
+        targetSubjectId: "japanese-history-advanced",
+        conceptTags: ["主権", "立憲主義"],
+        regionTags: ["日本"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-direct-representative-comparison",
+    curriculumNodeId: "politics-economics-section-1-1-4",
+    subjectId: "politics-economics",
+    type: "comparison-note",
+    title: "直接民主制と代表民主制",
+    body: "直接民主制は、国民や住民が政治上の決定に直接参加するしくみである。代表民主制は、国民が選挙で代表者を選び、その代表者が政治を行うしくみである。現代の大規模な国家では、すべての政策を国民が直接決めることは難しいため、代表民主制が中心となる。ただし、憲法改正の国民投票や地方自治の住民投票など、直接民主制的なしくみも用いられる。",
+    shortText: "直接参加する民主制と、代表者を通じて参加する民主制を比較する。",
+    order: 4,
+    conceptTags: ["直接民主制", "代表民主制", "間接民主制", "国民主権", "参政権"],
+    institutionTags: ["選挙制度", "地方公共団体"],
+    lawTags: ["日本国憲法", "日本国憲法第96条", "国民投票法"],
+    relatedReferenceIds: ["constitution-article-96"],
+    examTags: ["比較問題", "正誤問題注意"],
+    skillTags: ["比較", "制度比較"],
+    relatedHints: [
+      {
+        label: "地方自治と住民参加",
+        relation: "example",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["地方自治", "住民自治", "直接民主制"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-democracy-majority-minority-supplement",
+    curriculumNodeId: "politics-economics-section-1-1-4",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "多数決と少数意見の尊重",
+    body: "民主政治では、多くの場合、最終的な決定に多数決が用いられる。しかし、多数決は少数派の権利や意見を無視してよいという意味ではない。基本的人権、法の支配、立憲主義は、多数派による一方的な支配を防ぎ、少数者の権利を守る役割をもつ。",
+    shortText: "民主政治では多数決と少数者の権利保障を両立させる必要がある。",
+    order: 5,
+    conceptTags: ["多数決", "少数意見の尊重", "民主主義", "基本的人権", "法の支配", "立憲主義", "平等"],
+    examTags: ["誤解注意", "論述対策", "現代社会との関連"],
+    skillTags: ["因果関係", "論述"],
+    relatedHints: [
+      {
+        label: "公共の福祉と人権相互の調整",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["基本的人権", "公共の福祉", "平等"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-rule-of-law-summary",
+    curriculumNodeId: "politics-economics-section-1-1-5",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "法の支配",
+    body: "法の支配とは、政治権力も法に従わなければならず、権力者の恣意的な支配を許さないという考え方である。ここでいう法は、単に支配者が作った命令ではなく、人権保障や公正な手続を重視する法である。法の支配は、立憲主義や基本的人権の保障と深く結びつく。",
+    shortText: "政治権力を法の下に置き、恣意的支配を防ぐ考え方。",
+    order: 6,
+    conceptTags: ["法の支配", "立憲主義", "基本的人権", "人権保障", "自由権"],
+    lawTags: ["日本国憲法"],
+    examTags: ["重要用語", "入試頻出"],
+    skillTags: ["用語説明", "因果関係"],
+    relatedHints: [
+      {
+        label: "立憲主義",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["法の支配", "立憲主義", "基本的人権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-rule-of-law-term",
+    curriculumNodeId: "politics-economics-section-1-1-5",
+    subjectId: "politics-economics",
+    type: "thought-card",
+    title: "法の支配",
+    body: "法の支配とは、国王や政府などの政治権力も法に拘束されるという原理である。権力者が思いどおりに人々を支配するのではなく、法に基づいて政治が行われることで、国民の自由や権利を守ることができる。",
+    shortText: "政治権力も法に拘束されるという原理。",
+    order: 7,
+    frontText: "法の支配",
+    backText: "政治権力も法に拘束され、権力者の恣意的な支配を防ぐという原理。",
+    isMemorizationTarget: true,
+    conceptTags: ["法の支配", "基本的人権", "立憲主義"],
+    examTags: ["重要用語", "入試頻出"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "権力と国家",
+        relation: "background",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["国家", "主権", "法の支配"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-rule-of-law-legalism-comparison",
+    curriculumNodeId: "politics-economics-section-1-1-5",
+    subjectId: "politics-economics",
+    type: "comparison-note",
+    title: "法の支配と法治主義",
+    body: "法の支配は、権力を制限し、人権を守るために法が存在するという考え方である。一方、法治主義は、行政や政治が法律に基づいて行われるという考え方である。法律に基づいていても、その法律自体が人権を不当に侵害する場合、法の支配の考え方からは問題があると考えられる。",
+    shortText: "法が権力を制限する考え方と、政治が法律に基づく考え方を比較する。",
+    order: 8,
+    conceptTags: ["法治主義", "法の支配", "立憲主義", "基本的人権", "人権保障"],
+    examTags: ["比較問題", "正誤問題注意", "論述対策"],
+    skillTags: ["比較", "制度比較", "論述"],
+    relatedHints: [
+      {
+        label: "違憲審査制",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["立憲主義", "法の支配", "基本的人権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-constitutionalism-summary",
+    curriculumNodeId: "politics-economics-section-1-1-6",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "立憲主義",
+    body: "立憲主義とは、憲法によって国家権力を制限し、国民の権利や自由を守る考え方である。憲法は、国民を一方的に縛るためだけのものではなく、政治権力の行使を制限する最高法規としての役割をもつ。民主政治では、国民主権と立憲主義を組み合わせることで、多数派による権力濫用も防ぐ。",
+    shortText: "憲法によって国家権力を制限し、国民の権利を守る考え方。",
+    order: 9,
+    regionTags: ["日本"],
+    conceptTags: ["立憲主義", "憲法", "基本的人権", "国民主権", "法の支配"],
+    lawTags: ["日本国憲法", "日本国憲法第98条", "日本国憲法第99条"],
+    relatedReferenceIds: ["constitution-of-japan", "constitution-article-98", "constitution-article-99"],
+    examTags: ["重要用語", "入試頻出", "論述対策"],
+    skillTags: ["用語説明", "因果関係"],
+    relatedHints: [
+      {
+        label: "大日本帝国憲法と日本国憲法の比較",
+        relation: "contrast",
+        targetSubjectId: "japanese-history-advanced",
+        regionTags: ["日本"],
+        conceptTags: ["憲法", "立憲主義", "国民主権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-constitutionalism-term",
+    curriculumNodeId: "politics-economics-section-1-1-6",
+    subjectId: "politics-economics",
+    type: "thought-card",
+    title: "立憲主義",
+    body: "立憲主義とは、憲法によって国家権力を制限し、国民の権利や自由を保障しようとする考え方である。近代以降の憲法は、国家権力を組織するだけでなく、権力を制限する役割を重視している。",
+    shortText: "憲法によって国家権力を制限する考え方。",
+    order: 10,
+    frontText: "立憲主義",
+    backText: "憲法によって国家権力を制限し、国民の権利や自由を保障しようとする考え方。",
+    isMemorizationTarget: true,
+    conceptTags: ["立憲主義", "憲法", "基本的人権", "法の支配"],
+    lawTags: ["日本国憲法"],
+    relatedReferenceIds: ["constitution-of-japan"],
+    examTags: ["重要用語", "入試頻出"],
+    skillTags: ["用語説明"],
+    relatedHints: [
+      {
+        label: "法の支配",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["法の支配", "立憲主義", "基本的人権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-constitutionalism-constitution-source",
+    curriculumNodeId: "politics-economics-section-1-1-6",
+    subjectId: "politics-economics",
+    type: "source-note",
+    title: "日本国憲法と立憲主義",
+    body: "日本国憲法は、国民主権、基本的人権の尊重、平和主義を基本原理とし、国家権力のあり方を定めている。憲法第98条は憲法を国の最高法規とし、第99条は天皇・国務大臣・国会議員・裁判官などに憲法尊重擁護義務を課している。これは、憲法が権力を制限する規範であることを理解するうえで重要である。",
+    shortText: "憲法第98条・第99条を通じて、憲法が権力を制限する規範であることを理解する。",
+    order: 11,
+    regionTags: ["日本"],
+    conceptTags: ["憲法", "立憲主義", "法の支配", "基本的人権"],
+    lawTags: ["日本国憲法", "日本国憲法第98条", "日本国憲法第99条"],
+    sourceTags: ["条文"],
+    relatedReferenceIds: ["constitution-article-98", "constitution-article-99"],
+    examTags: ["資料読解", "正誤問題注意", "論述対策"],
+    skillTags: ["条文読解", "資料読解"],
+    relatedHints: [
+      {
+        label: "憲法改正手続",
+        relation: "reference",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["憲法", "国民主権"],
+        lawTags: ["日本国憲法第96条"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-separation-of-powers-summary",
+    curriculumNodeId: "politics-economics-section-1-1-7",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "権力分立",
+    body: "権力分立とは、国家権力を一つの機関に集中させず、複数の機関に分けて相互に抑制と均衡を働かせる考え方である。日本国憲法では、立法を国会、行政を内閣、司法を裁判所が担う三権分立が基本となる。権力分立は、権力の濫用を防ぎ、国民の権利を守るための制度である。",
+    shortText: "国家権力を分け、相互に抑制と均衡を働かせるしくみ。",
+    order: 12,
+    regionTags: ["日本"],
+    conceptTags: ["権力分立", "三権分立", "立憲主義", "基本的人権"],
+    institutionTags: ["国会", "内閣", "裁判所"],
+    lawTags: ["日本国憲法"],
+    relatedReferenceIds: ["constitution-article-41", "constitution-article-65", "constitution-article-76"],
+    examTags: ["重要用語", "入試頻出", "比較問題"],
+    skillTags: ["制度比較", "因果関係"],
+    relatedHints: [
+      {
+        label: "国会・内閣・裁判所の具体的なしくみ",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["三権分立", "議院内閣制", "権力分立"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-separation-of-powers-term",
+    curriculumNodeId: "politics-economics-section-1-1-7",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "権力分立",
+    body: "権力分立とは、国家権力を立法・行政・司法などに分け、それぞれの機関が互いに抑制し合うことで権力の濫用を防ぐしくみである。三権分立は、立憲主義を制度面から支える重要な考え方である。",
+    shortText: "国家権力を分け、権力の濫用を防ぐしくみ。",
+    order: 13,
+    frontText: "権力分立",
+    backText: "国家権力を立法・行政・司法などに分け、相互に抑制させることで権力の濫用を防ぐしくみ。",
+    isMemorizationTarget: true,
+    conceptTags: ["権力分立", "三権分立", "立憲主義", "法の支配"],
+    institutionTags: ["国会", "内閣", "裁判所"],
+    examTags: ["重要用語", "入試頻出"],
+    skillTags: ["用語説明", "制度比較"],
+    relatedHints: [
+      {
+        label: "モンテスキューの権力分立論",
+        relation: "background",
+        targetSubjectId: "ethics",
+        conceptTags: ["自由", "法の支配"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-separation-of-powers-three-powers-comparison",
+    curriculumNodeId: "politics-economics-section-1-1-7",
+    subjectId: "politics-economics",
+    type: "comparison-note",
+    title: "立法・行政・司法の役割",
+    body: "立法は、法律を制定する働きであり、日本では国会が担う。行政は、法律や予算に基づいて政策を実行する働きであり、内閣が中心となる。司法は、具体的な争いについて法を適用し、権利を救済する働きであり、裁判所が担う。三権の役割を区別することは、国会・内閣・裁判所の学習の前提になる。",
+    shortText: "立法・行政・司法の役割を比較する。",
+    order: 14,
+    regionTags: ["日本"],
+    conceptTags: ["三権分立", "権力分立", "立憲主義"],
+    institutionTags: ["国会", "内閣", "裁判所", "最高裁判所"],
+    lawTags: ["日本国憲法"],
+    relatedReferenceIds: ["constitution-article-41", "constitution-article-65", "constitution-article-76"],
+    examTags: ["比較問題", "正誤問題注意"],
+    skillTags: ["比較", "制度比較"],
+    relatedHints: [
+      {
+        label: "議院内閣制",
+        relation: "example",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["議院内閣制", "権力分立"],
+        institutionTags: ["国会", "内閣"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-separation-of-powers-checks-and-balances-flow",
+    curriculumNodeId: "politics-economics-section-1-1-7",
+    subjectId: "politics-economics",
+    type: "flow-note",
+    title: "抑制と均衡のしくみ",
+    body: "権力分立では、三権を完全に切り離すだけではなく、互いに監視し合う関係をつくることが重要である。国会は内閣総理大臣を指名し、内閣不信任決議を行うことができる。内閣は衆議院を解散することができる。裁判所は違憲審査制により、法律や命令などが憲法に反しないかを判断する。このような抑制と均衡によって、権力の濫用を防ぐ。",
+    shortText: "三権が互いに監視し合い、権力の濫用を防ぐしくみ。",
+    order: 15,
+    regionTags: ["日本"],
+    conceptTags: ["権力分立", "三権分立", "立憲主義", "法の支配"],
+    institutionTags: ["国会", "内閣", "裁判所", "最高裁判所", "違憲審査制"],
+    lawTags: ["日本国憲法", "日本国憲法第81条"],
+    relatedReferenceIds: ["constitution-article-41", "constitution-article-65", "constitution-article-76", "constitution-article-81"],
+    examTags: ["因果関係", "比較問題", "論述対策"],
+    skillTags: ["因果関係", "制度比較", "論述"],
+    relatedHints: [
+      {
+        label: "違憲審査制と司法権",
+        relation: "example",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["法の支配", "立憲主義", "権力分立"],
+        institutionTags: ["最高裁判所", "違憲審査制"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-separation-of-powers-judicial-review-system",
+    curriculumNodeId: "politics-economics-section-1-1-7",
+    subjectId: "politics-economics",
+    type: "system-card",
+    title: "違憲審査制",
+    body: "違憲審査制とは、法律・命令・規則・処分などが憲法に違反していないかを裁判所が審査する制度である。日本国憲法第81条は、最高裁判所を終審裁判所として違憲審査権をもつ機関と定めている。違憲審査制は、立憲主義と法の支配を具体化する制度である。",
+    shortText: "法律や処分などが憲法に違反しないかを裁判所が審査する制度。",
+    order: 16,
+    frontText: "違憲審査制",
+    backText: "法律・命令・規則・処分などが憲法に違反していないかを裁判所が審査する制度。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["立憲主義", "法の支配", "権力分立", "基本的人権"],
+    institutionTags: ["裁判所", "最高裁判所", "違憲審査制"],
+    lawTags: ["日本国憲法", "日本国憲法第81条"],
+    relatedReferenceIds: ["constitution-article-81"],
+    examTags: ["重要用語", "入試頻出", "資料読解"],
+    skillTags: ["用語説明", "条文読解"],
+    relatedHints: [
+      {
+        label: "判例学習への接続",
+        relation: "reference",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["基本的人権", "法の支配", "立憲主義"],
+        institutionTags: ["最高裁判所", "違憲審査制"]
+      }
+    ]
+  }
+];

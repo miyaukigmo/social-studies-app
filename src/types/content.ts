@@ -66,6 +66,8 @@ export type RelatedHint = {
   eventTags?: string[];
   peopleTags?: string[];
   regionTags?: string[];
+  lawTags?: string[];
+  institutionTags?: string[];
 };
 
 export type ContentItem = {

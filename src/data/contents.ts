@@ -2,7 +2,7 @@ import type { ContentItem } from "../types/content";
 import { ethicsYouthSelfFormationContents, ethicsYouthSelfFormationContentsPart2, ethicsYouthSelfFormationContentsPart3 } from "./contentsEthics";
 import { historyBasicHistoryDoorChapter1Contents, historyBasicSourcesChapter2Part1Contents, historyBasicSourcesChapter2Part2Contents } from "./contentsHistoryBasic";
 import { geographyBasicPositionContents, geographyBasicMapProjectionContents, geographyBasicMapReadingContents, geographyBasicGisContents, geographyBasicStateTerritoryContents, geographyBasicGlobalConnectionsContents } from "./contentsGeographyBasic";
-import { politicsEconomicsDemocracyPrinciplesContents } from "./contentsPoliticsEconomics";
+import { politicsEconomicsDemocracyPrinciplesContents, politicsEconomicsDemocracyPrinciplesPart2Contents } from "./contentsPoliticsEconomics";
 
 export const contents: ContentItem[] = [
   ...ethicsYouthSelfFormationContents,
@@ -18,4 +18,5 @@ export const contents: ContentItem[] = [
   ...geographyBasicStateTerritoryContents,
   ...geographyBasicGlobalConnectionsContents,
   ...politicsEconomicsDemocracyPrinciplesContents,
+  ...politicsEconomicsDemocracyPrinciplesPart2Contents,
 ];
