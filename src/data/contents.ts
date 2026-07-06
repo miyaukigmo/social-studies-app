@@ -2,7 +2,7 @@ import type { ContentItem } from "../types/content";
 import { ethicsYouthSelfFormationContents, ethicsYouthSelfFormationContentsPart2, ethicsYouthSelfFormationContentsPart3 } from "./contentsEthics";
 import { historyBasicHistoryDoorChapter1Contents, historyBasicSourcesChapter2Part1Contents, historyBasicSourcesChapter2Part2Contents } from "./contentsHistoryBasic";
 import { geographyBasicPositionContents, geographyBasicMapProjectionContents, geographyBasicMapReadingContents, geographyBasicGisContents, geographyBasicStateTerritoryContents, geographyBasicGlobalConnectionsContents } from "./contentsGeographyBasic";
-import { politicsEconomicsDemocracyPrinciplesContents, politicsEconomicsDemocracyPrinciplesPart2Contents, politicsEconomicsDemocracyPrinciplesPart3Contents, politicsEconomicsDemocracyPrinciplesPart4Contents, politicsEconomicsConstitutionModernPoliticsPart1Contents } from "./contentsPoliticsEconomics";
+import { politicsEconomicsDemocracyPrinciplesContents, politicsEconomicsDemocracyPrinciplesPart2Contents, politicsEconomicsDemocracyPrinciplesPart3Contents, politicsEconomicsDemocracyPrinciplesPart4Contents, politicsEconomicsConstitutionModernPoliticsPart1Contents, politicsEconomicsConstitutionModernPoliticsPart2Contents } from "./contentsPoliticsEconomics";
 
 export const contents: ContentItem[] = [
   ...ethicsYouthSelfFormationContents,
@@ -22,4 +22,5 @@ export const contents: ContentItem[] = [
   ...politicsEconomicsDemocracyPrinciplesPart3Contents,
   ...politicsEconomicsDemocracyPrinciplesPart4Contents,
   ...politicsEconomicsConstitutionModernPoliticsPart1Contents,
+  ...politicsEconomicsConstitutionModernPoliticsPart2Contents,
 ];
