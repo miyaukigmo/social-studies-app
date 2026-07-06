@@ -2245,3 +2245,425 @@ export const politicsEconomicsConstitutionModernPoliticsPart2Contents: ContentIt
     skillTags: ["条文読解", "資料読解", "制度比較"]
   }
 ];
+
+export const politicsEconomicsConstitutionModernPoliticsPart3Contents: ContentItem[] = [
+  {
+    id: "politics-economics-new-rights-summary",
+    curriculumNodeId: "politics-economics-section-1-2-7",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "新しい人権",
+    body: "新しい人権とは、社会の変化にともなって重要性が意識されるようになった人権である。日本国憲法にはすべての人権が細かく列挙されているわけではないため、個人の尊重や幸福追求権を定めた第13条を根拠に、プライバシーの権利、自己決定権、環境権、知る権利などが論じられてきた。情報化、医療技術の発展、環境問題など、現代社会の変化と結びつけて理解する必要がある。",
+    shortText: "社会の変化にともなって重要性が高まった人権を扱う。",
+    order: 1,
+    regionTags: ["日本"],
+    conceptTags: ["新しい人権", "個人の尊重", "幸福追求権", "プライバシーの権利", "自己決定権", "環境権", "知る権利", "情報化", "環境問題"],
+    lawTags: ["日本国憲法", "日本国憲法第13条"],
+    relatedReferenceIds: ["constitution-article-13"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "分類", "論述"],
+    relatedHints: [
+      {
+        label: "基本的人権の尊重",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["基本的人権", "人権保障", "個人の尊重"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-new-rights-privacy-term",
+    curriculumNodeId: "politics-economics-section-1-2-7",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "プライバシーの権利",
+    body: "プライバシーの権利とは、私生活上の情報をみだりに公開されない権利である。情報化が進む現代社会では、個人情報の収集・利用・拡散が容易になっているため、個人の尊重や幸福追求権と結びつけて重要性が高まっている。個人情報保護やインターネット上の情報流通とも関係する。",
+    shortText: "私生活上の情報をみだりに公開されない権利。",
+    order: 2,
+    frontText: "プライバシーの権利",
+    backText: "私生活上の情報をみだりに公開されない権利。情報化社会で重要性が高まった新しい人権の一つ。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["プライバシーの権利", "新しい人権", "個人の尊重", "幸福追求権", "情報化"],
+    lawTags: ["日本国憲法", "日本国憲法第13条", "個人情報保護法"],
+    relatedReferenceIds: ["constitution-article-13"],
+    examTags: ["重要用語", "現代社会との関連"],
+    skillTags: ["用語説明", "論述"],
+    relatedHints: [
+      {
+        label: "情報化社会と人権",
+        relation: "example",
+        targetSubjectId: "public",
+        conceptTags: ["情報化", "プライバシーの権利", "個人の尊重"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-new-rights-self-determination-term",
+    curriculumNodeId: "politics-economics-section-1-2-7",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "自己決定権",
+    body: "自己決定権とは、自分の生き方や身体、医療などに関わる重要な事柄について、自分で決定する権利として論じられる権利である。医療におけるインフォームド・コンセントや生命倫理の問題と関係する。個人の尊重や幸福追求権を根拠に考えられることが多い。",
+    shortText: "自分の生き方や身体に関わる重要事項を自分で決める権利。",
+    order: 3,
+    frontText: "自己決定権",
+    backText: "自分の生き方や身体、医療などに関わる重要事項を自分で決定する権利として論じられる権利。",
+    isMemorizationTarget: true,
+    conceptTags: ["自己決定権", "新しい人権", "個人の尊重", "幸福追求権", "生命倫理"],
+    lawTags: ["日本国憲法", "日本国憲法第13条"],
+    relatedReferenceIds: ["constitution-article-13"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "論述"],
+    relatedHints: [
+      {
+        label: "倫理の生命倫理",
+        relation: "same-concept",
+        targetSubjectId: "ethics",
+        conceptTags: ["生命倫理", "自己決定権", "個人"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-new-rights-environmental-right-term",
+    curriculumNodeId: "politics-economics-section-1-2-7",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "環境権",
+    body: "環境権とは、良好な環境のもとで生活する権利として論じられる権利である。公害や環境破壊への反省、持続可能な社会への関心の高まりを背景に重要視されてきた。憲法に明文で定められているわけではないが、個人の尊重や幸福追求権、生存権などと関連づけて論じられる。",
+    shortText: "良好な環境のもとで生活する権利として論じられる権利。",
+    order: 4,
+    frontText: "環境権",
+    backText: "良好な環境のもとで生活する権利として論じられる新しい人権。",
+    isMemorizationTarget: true,
+    conceptTags: ["環境権", "新しい人権", "環境問題", "持続可能性", "幸福追求権", "生存権"],
+    lawTags: ["日本国憲法", "日本国憲法第13条", "日本国憲法第25条", "環境基本法"],
+    relatedReferenceIds: ["constitution-article-13", "constitution-article-25"],
+    examTags: ["重要用語", "現代社会との関連"],
+    skillTags: ["用語説明", "論述"],
+    relatedHints: [
+      {
+        label: "地理総合の環境問題",
+        relation: "same-concept",
+        targetSubjectId: "geography-basic",
+        conceptTags: ["環境問題", "持続可能性", "環境権"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-new-rights-right-to-know-term",
+    curriculumNodeId: "politics-economics-section-1-2-7",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "知る権利",
+    body: "知る権利とは、国民が政治や社会に関する情報を得る権利として論じられる権利である。民主政治では、国民が十分な情報に基づいて判断し、政治に参加することが重要である。知る権利は、表現の自由、報道の自由、情報公開制度と深く関係する。",
+    shortText: "国民が政治や社会に関する情報を得る権利。",
+    order: 5,
+    frontText: "知る権利",
+    backText: "国民が政治や社会に関する情報を得る権利。表現の自由・報道の自由・情報公開制度と関係する。",
+    isMemorizationTarget: true,
+    conceptTags: ["知る権利", "新しい人権", "表現の自由", "報道の自由", "情報公開", "民主主義", "政治参加"],
+    lawTags: ["日本国憲法", "日本国憲法第21条", "情報公開法"],
+    relatedReferenceIds: ["constitution-article-21"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "資料読解"],
+    relatedHints: [
+      {
+        label: "表現の自由と知る権利",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["表現の自由", "知る権利", "民主主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-rights-judiciary-summary",
+    curriculumNodeId: "politics-economics-section-1-2-8",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "人権保障と司法",
+    body: "人権保障と司法では、裁判所が国民の権利を救済し、国家権力を憲法のもとに置く役割を学ぶ。日本国憲法第81条は、最高裁判所を終審裁判所として、法律・命令・規則・処分が憲法に適合するかを判断する違憲審査権をもつと定めている。違憲審査制は、立憲主義と法の支配を具体化する重要な制度である。",
+    shortText: "裁判所による人権救済と違憲審査制を扱う。",
+    order: 6,
+    regionTags: ["日本"],
+    conceptTags: ["人権保障", "司法権", "違憲審査制", "法の支配", "立憲主義", "裁判を受ける権利"],
+    institutionTags: ["裁判所", "最高裁判所", "違憲審査制"],
+    lawTags: ["日本国憲法", "日本国憲法第32条", "日本国憲法第76条", "日本国憲法第81条"],
+    relatedReferenceIds: ["constitution-article-32", "constitution-article-76", "constitution-article-81"],
+    examTags: ["重要用語", "入試頻出", "論述対策"],
+    skillTags: ["制度比較", "条文読解", "要約"],
+    relatedHints: [
+      {
+        label: "権力分立と違憲審査制",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["権力分立", "違憲審査制", "立憲主義"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-rights-judiciary-judicial-review-system",
+    curriculumNodeId: "politics-economics-section-1-2-8",
+    subjectId: "politics-economics",
+    type: "system-card",
+    title: "違憲審査制",
+    body: "違憲審査制とは、法律・命令・規則・処分などが憲法に違反していないかを裁判所が審査する制度である。日本では、具体的な事件の裁判を通じて違憲かどうかを判断する付随的違憲審査制がとられていると説明されることが多い。違憲審査制は、立法や行政による人権侵害を防ぐしくみである。",
+    shortText: "法令や処分が憲法に違反しないかを裁判所が審査する制度。",
+    order: 7,
+    frontText: "違憲審査制",
+    backText: "法律・命令・規則・処分などが憲法に違反していないかを裁判所が審査する制度。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["違憲審査制", "付随的違憲審査制", "司法権", "人権保障", "立憲主義", "法の支配"],
+    institutionTags: ["裁判所", "最高裁判所", "違憲審査制"],
+    lawTags: ["日本国憲法", "日本国憲法第81条"],
+    relatedReferenceIds: ["constitution-article-81"],
+    examTags: ["重要用語", "入試頻出", "正誤問題注意"],
+    skillTags: ["用語説明", "制度比較", "条文読解"]
+  },
+  {
+    id: "politics-economics-rights-judiciary-court-remedy-term",
+    curriculumNodeId: "politics-economics-section-1-2-8",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "裁判を受ける権利",
+    body: "裁判を受ける権利とは、国民が裁判所で公正な裁判を受けることができる権利である。日本国憲法第32条は、何人も裁判所において裁判を受ける権利を奪われないと定めている。人権が侵害された場合に司法による救済を求めるための基礎となる権利である。",
+    shortText: "裁判所で公正な裁判を受けることができる権利。",
+    order: 8,
+    frontText: "裁判を受ける権利",
+    backText: "国民が裁判所で公正な裁判を受けることができる権利。日本国憲法第32条に定められる。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["裁判を受ける権利", "請求権", "人権保障", "司法権"],
+    institutionTags: ["裁判所"],
+    lawTags: ["日本国憲法", "日本国憲法第32条"],
+    relatedReferenceIds: ["constitution-article-32"],
+    examTags: ["重要用語", "正誤問題注意"],
+    skillTags: ["用語説明", "条文読解"]
+  },
+  {
+    id: "politics-economics-rights-judiciary-constitutional-case-source",
+    curriculumNodeId: "politics-economics-section-1-2-8",
+    subjectId: "politics-economics",
+    type: "source-note",
+    title: "違憲判決と人権保障",
+    body: "最高裁判所が法令を違憲と判断した例は多くはないが、人権保障を考えるうえで重要である。尊属殺重罰規定違憲判決は、刑法の規定が法の下の平等に反すると判断された代表的な例である。非嫡出子相続分規定違憲決定は、出生による不合理な差別が問題となった例である。判例は、抽象的な人権が具体的な事件の中でどのように保障されるかを考える資料になる。",
+    shortText: "違憲判決を通じて、裁判所による人権保障を理解する。",
+    order: 9,
+    regionTags: ["日本"],
+    eventTags: ["尊属殺重罰規定違憲判決", "非嫡出子相続分規定違憲決定"],
+    conceptTags: ["違憲判決", "違憲審査制", "人権保障", "平等権", "法の下の平等"],
+    institutionTags: ["最高裁判所"],
+    lawTags: ["日本国憲法", "日本国憲法第14条", "日本国憲法第81条"],
+    sourceTags: ["判例"],
+    relatedReferenceIds: ["case-patricide-1973", "case-illegitimate-child-inheritance-2013", "constitution-article-14", "constitution-article-81"],
+    examTags: ["判例読解", "入試頻出", "資料読解"],
+    skillTags: ["判例読解", "資料読解", "論述"],
+    relatedHints: [
+      {
+        label: "平等権と差別問題",
+        relation: "example",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["平等権", "法の下の平等", "差別"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-rights-summary",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "section-summary",
+    title: "平等権と差別問題",
+    body: "平等権とは、すべての人が不合理な差別を受けない権利である。日本国憲法第14条は、すべて国民は法の下に平等であり、人種、信条、性別、社会的身分、門地によって政治的・経済的・社会的関係において差別されないと定めている。現代社会では、性別、障害、出身、国籍、性的指向などに関わる差別問題が課題となっている。",
+    shortText: "法の下の平等と、現代社会の差別問題を扱う。",
+    order: 10,
+    regionTags: ["日本"],
+    conceptTags: ["平等権", "法の下の平等", "差別", "合理的区別", "ジェンダー", "障害者差別", "同和問題", "多文化共生"],
+    lawTags: ["日本国憲法", "日本国憲法第14条"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["重要用語", "現代社会との関連", "論述対策"],
+    skillTags: ["用語説明", "分類", "論述"],
+    relatedHints: [
+      {
+        label: "基本的人権の尊重",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["基本的人権", "平等権", "人権保障"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-rights-equality-term",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "平等権",
+    body: "平等権とは、すべての人が不合理な差別を受けず、等しく扱われる権利である。日本国憲法第14条は、法の下の平等を定めている。ただし、すべてを完全に同じに扱うことだけが平等ではなく、目的に合理性がある区別は許される場合がある。",
+    shortText: "不合理な差別を受けず、等しく扱われる権利。",
+    order: 11,
+    frontText: "平等権",
+    backText: "すべての人が不合理な差別を受けず、等しく扱われる権利。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["平等権", "法の下の平等", "差別", "合理的区別", "基本的人権"],
+    lawTags: ["日本国憲法", "日本国憲法第14条"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["基本用語", "重要用語", "正誤問題注意"],
+    skillTags: ["用語説明", "比較"]
+  },
+  {
+    id: "politics-economics-equality-rights-under-law-term",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "term-card",
+    title: "法の下の平等",
+    body: "法の下の平等とは、法律の適用や制度の設計において、人々を不合理に差別してはならないという原則である。日本国憲法第14条に定められる。平等は、形式的に同じ扱いをするだけでなく、実質的な不利益を是正するための配慮と関係する場合もある。",
+    shortText: "法律の適用や制度設計で、不合理な差別をしてはならないという原則。",
+    order: 12,
+    frontText: "法の下の平等",
+    backText: "法律の適用や制度の設計において、人々を不合理に差別してはならないという原則。",
+    isMemorizationTarget: true,
+    regionTags: ["日本"],
+    conceptTags: ["法の下の平等", "平等権", "形式的平等", "実質的平等", "合理的区別"],
+    lawTags: ["日本国憲法", "日本国憲法第14条"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["重要用語", "比較問題", "論述対策"],
+    skillTags: ["用語説明", "比較", "論述"]
+  },
+  {
+    id: "politics-economics-equality-formal-substantive-comparison",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "comparison-note",
+    title: "形式的平等と実質的平等",
+    body: "形式的平等とは、すべての人を同じように扱うことを重視する考え方である。実質的平等とは、置かれた状況の違いや社会的不利益を考慮し、結果として公平になるように配慮する考え方である。現代の差別問題では、同じ扱いをするだけでは不利益が残る場合があるため、実質的平等の視点も重要になる。",
+    shortText: "同じ扱いを重視する平等と、実質的な公平を重視する平等を比較する。",
+    order: 13,
+    conceptTags: ["形式的平等", "実質的平等", "平等権", "法の下の平等", "差別", "合理的配慮"],
+    examTags: ["比較問題", "論述対策", "現代社会との関連"],
+    skillTags: ["比較", "論述", "用語説明"],
+    relatedHints: [
+      {
+        label: "社会権と福祉国家",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["実質的平等", "社会権", "福祉国家"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-gender-discrimination-supplement",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "性別による差別",
+    body: "性別による差別は、雇用、賃金、政治参加、家事・育児の負担、意思決定の場への参加など、さまざまな場面で問題となる。日本国憲法は法の下の平等を定め、性別による差別を禁じている。現代社会では、形式的な平等だけでなく、実質的な機会の平等をどう実現するかが課題となる。",
+    shortText: "性別による差別と、実質的な機会の平等を考える。",
+    order: 14,
+    regionTags: ["日本"],
+    conceptTags: ["差別", "ジェンダー", "平等権", "法の下の平等", "実質的平等", "機会の平等"],
+    lawTags: ["日本国憲法", "日本国憲法第14条", "男女雇用機会均等法"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["現代社会との関連", "論述対策"],
+    skillTags: ["論述", "比較"],
+    relatedHints: [
+      {
+        label: "労働問題とジェンダー",
+        relation: "same-concept",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["労働問題", "ジェンダー", "実質的平等"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-disability-discrimination-supplement",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "障害者差別と合理的配慮",
+    body: "障害者差別では、障害のある人が社会参加しにくい制度や環境が問題となる。現代社会では、障害のある人にだけ努力を求めるのではなく、社会の側が障壁を取り除くことが重視される。合理的配慮とは、障害のある人が他の人と同じように学び、働き、生活できるように、必要で合理的な調整を行うことである。",
+    shortText: "障害者差別と、社会の側が障壁を取り除く合理的配慮を扱う。",
+    order: 15,
+    regionTags: ["日本"],
+    conceptTags: ["障害者差別", "合理的配慮", "平等権", "実質的平等", "社会参加", "多文化共生"],
+    lawTags: ["日本国憲法", "日本国憲法第14条", "障害者差別解消法"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["現代社会との関連", "論述対策"],
+    skillTags: ["論述", "用語説明"],
+    relatedHints: [
+      {
+        label: "公共における共生社会",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["社会参加", "多文化共生", "合理的配慮"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-dowa-foreigners-supplement",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "supplement-note",
+    title: "出身・国籍・民族をめぐる差別",
+    body: "平等権の学習では、同和問題、外国人差別、民族差別など、出身・国籍・民族をめぐる差別も重要である。これらの問題では、法律上の平等だけでなく、社会意識や就職・結婚・住居など生活の場面で残る差別をどうなくすかが問われる。多文化共生の視点から、異なる背景をもつ人々がともに生活できる社会を考える必要がある。",
+    shortText: "出身・国籍・民族をめぐる差別と、多文化共生を考える。",
+    order: 16,
+    regionTags: ["日本"],
+    conceptTags: ["同和問題", "外国人差別", "民族差別", "差別", "平等権", "多文化共生", "人権保障"],
+    lawTags: ["日本国憲法", "日本国憲法第14条"],
+    relatedReferenceIds: ["constitution-article-14"],
+    examTags: ["現代社会との関連", "論述対策"],
+    skillTags: ["論述", "比較"],
+    relatedHints: [
+      {
+        label: "多文化共生と国際化",
+        relation: "same-concept",
+        targetSubjectId: "public",
+        conceptTags: ["多文化共生", "人権保障", "差別"]
+      }
+    ]
+  },
+  {
+    id: "politics-economics-equality-illegitimate-child-case-source",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "source-note",
+    title: "非嫡出子相続分規定違憲決定",
+    body: "非嫡出子相続分規定違憲決定は、婚姻していない男女の間に生まれた子の法定相続分を、婚姻している男女の間に生まれた子の2分の1とする民法の規定について、最高裁判所が法の下の平等に反すると判断した事例である。出生という本人に選べない事情によって不利益を受けることの問題を考えるうえで重要な判例である。",
+    shortText: "出生による不合理な差別と、法の下の平等を考える判例。",
+    order: 17,
+    periodLabel: "2013年",
+    startYear: 2013,
+    datePrecision: "year",
+    regionTags: ["日本"],
+    eventTags: ["非嫡出子相続分規定違憲決定"],
+    conceptTags: ["平等権", "法の下の平等", "差別", "合理的区別", "違憲判決"],
+    institutionTags: ["最高裁判所"],
+    lawTags: ["日本国憲法", "日本国憲法第14条", "民法"],
+    sourceTags: ["判例"],
+    relatedReferenceIds: ["case-illegitimate-child-inheritance-2013", "constitution-article-14"],
+    examTags: ["判例読解", "重要用語", "現代社会との関連"],
+    skillTags: ["判例読解", "資料読解", "論述"]
+  },
+  {
+    id: "politics-economics-equality-discrimination-issues-flow",
+    curriculumNodeId: "politics-economics-section-1-2-9",
+    subjectId: "politics-economics",
+    type: "flow-note",
+    title: "平等権と差別問題の考え方",
+    body: "平等権を考えるときは、まず法の下の平等を確認する。次に、すべてを同じに扱えばよいのか、状況の違いに応じた配慮が必要なのかを考える。さらに、性別、障害、出身、国籍、民族などを理由に不利益が生じていないかを具体的に見る。現代社会では、形式的平等だけでなく、実質的平等や合理的配慮の視点が重要になる。",
+    shortText: "法の下の平等から、実質的平等・合理的配慮へ考えを広げる。",
+    order: 18,
+    conceptTags: ["平等権", "法の下の平等", "形式的平等", "実質的平等", "合理的配慮", "差別"],
+    examTags: ["論述対策", "因果関係", "現代社会との関連"],
+    skillTags: ["因果関係", "比較", "論述"],
+    relatedHints: [
+      {
+        label: "憲法と現代社会",
+        relation: "effect",
+        targetSubjectId: "politics-economics",
+        conceptTags: ["人権保障", "差別", "現代社会"]
+      }
+    ]
+  }
+];
