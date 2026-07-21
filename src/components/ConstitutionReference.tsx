@@ -162,7 +162,7 @@ export const ConstitutionReference: React.FC<Props> = ({ onBack }) => {
       </div>
 
       {/* 2ペインレイアウト */}
-      <div className="two-pane-layout" style={{ flexGrow: 1, overflow: 'hidden', position: 'relative' }}>
+      <div className="two-pane-layout" style={{ display: 'flex', flexGrow: 1, overflow: 'hidden', position: 'relative' }}>
         {/* モバイル用オーバーレイ背景 */}
         <div 
           className={`mobile-overlay ${isSidebarOpen ? 'mobile-open' : ''}`}
